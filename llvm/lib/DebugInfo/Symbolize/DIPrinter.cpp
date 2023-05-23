@@ -171,7 +171,7 @@ void LLVMPrinter::printStartAddress(const DILineInfo &Info) {
 void LLVMPrinter::printFooter() { OS << '\n'; }
 
 void PlainPrinterBase::print(const DILineInfo &Info, bool Inlined) {
-  printFunctionName(Info.FunctionName, Inlined);
+  printFunctionName(Info.SymbolTableFunctionName, Inlined);
   StringRef Filename = Info.FileName;
   if (Filename == DILineInfo::BadString)
     Filename = DILineInfo::Addr2LineBadString;
@@ -277,30 +277,46 @@ static std::string toHex(uint64_t V) {
 }
 
 static json::Object toJSON(const Request &Request, StringRef ErrorMsg = "") {
-  json::Object Json({{"ModuleName", Request.ModuleName.str()}});
+  json::Object Json;
   if (Request.Address)
-    Json["Address"] = toHex(*Request.Address);
+    Json["address"] = toHex(*Request.Address);
   if (!ErrorMsg.empty())
-    Json["Error"] = json::Object({{"Message", ErrorMsg.str()}});
+    Json["error"] = ErrorMsg.str();
   return Json;
 }
 
-static json::Object toJSON(const DILineInfo &LineInfo) {
-  return json::Object(
-      {{"FunctionName", LineInfo.FunctionName != DILineInfo::BadString
-                            ? LineInfo.FunctionName
-                            : ""},
-       {"StartFileName", LineInfo.StartFileName != DILineInfo::BadString
-                             ? LineInfo.StartFileName
-                             : ""},
-       {"StartLine", LineInfo.StartLine},
-       {"StartAddress",
-        LineInfo.StartAddress ? toHex(*LineInfo.StartAddress) : ""},
-       {"FileName",
-        LineInfo.FileName != DILineInfo::BadString ? LineInfo.FileName : ""},
-       {"Line", LineInfo.Line},
-       {"Column", LineInfo.Column},
-       {"Discriminator", LineInfo.Discriminator}});
+static json::Object toJSON(const DILineInfo &LineInfo, const bool inlined = false) {
+    json::Object Object = json::Object(
+        {{"inlined", inlined},
+         {"symbolTableFunctionName", LineInfo.SymbolTableFunctionName},
+         {"shortFunctionName", LineInfo.ShortFunctionName},
+         {"linkageFunctionName", LineInfo.LinkageFunctionName},
+         {"startLine", LineInfo.StartLine},
+         {"fileName", LineInfo.FileName},
+         {"line", LineInfo.Line},
+         {"column", LineInfo.Column},
+         {"discriminator", LineInfo.Discriminator}});
+
+    if (LineInfo.SymbolTableFunctionName == DILineInfo::BadString) {
+      Object["symbolTableFunctionName"] = nullptr;
+    }
+    if (LineInfo.ShortFunctionName == DILineInfo::BadString) {
+      Object["shortFunctionName"] = nullptr;
+    }
+    if (LineInfo.LinkageFunctionName == DILineInfo::BadString) {
+      Object["linkageFunctionName"] = nullptr;
+    }
+    if (LineInfo.FileName == DILineInfo::BadString) {
+      Object["fileName"] = nullptr;
+    }
+    if (!LineInfo.StartLine) {
+      Object["startLine"] = nullptr;
+    }
+    if (!LineInfo.Discriminator) {
+      Object["discriminator"] = nullptr;
+    }
+  
+  return Object;
 }
 
 void JSONPrinter::print(const Request &Request, const DILineInfo &Info) {
@@ -313,18 +329,21 @@ void JSONPrinter::print(const Request &Request, const DIInliningInfo &Info) {
   json::Array Array;
   for (uint32_t I = 0, N = Info.getNumberOfFrames(); I < N; ++I) {
     const DILineInfo &LineInfo = Info.getFrame(I);
-    json::Object Object = toJSON(LineInfo);
+    json::Object Object = toJSON(LineInfo, I > 0);
     SourceCode SourceCode(LineInfo.FileName, LineInfo.Line,
                           Config.SourceContextLines, LineInfo.Source);
     std::string FormattedSource;
     raw_string_ostream Stream(FormattedSource);
     SourceCode.format(Stream);
     if (!FormattedSource.empty())
-      Object["Source"] = std::move(FormattedSource);
+      Object["source"] = std::move(FormattedSource);
     Array.push_back(std::move(Object));
   }
-  json::Object Json = toJSON(Request);
-  Json["Symbol"] = std::move(Array);
+  json::Object Json;
+  if (Request.Address)
+    Json["address"] = toHex(*Request.Address);
+  
+  Json["symbol"] = std::move(Array);
   if (ObjectList)
     ObjectList->push_back(std::move(Json));
   else
