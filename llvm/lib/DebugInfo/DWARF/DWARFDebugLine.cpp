@@ -1239,6 +1239,35 @@ uint32_t DWARFDebugLine::LineTable::findRowInSeq(
   return RowPos - Rows.begin();
 }
 
+uint32_t DWARFDebugLine::LineTable::findRowInSeqOld(
+    const DWARFDebugLine::Sequence &Seq,
+    object::SectionedAddress Address) const {
+  if (!Seq.containsPC(Address))
+    return UnknownRowIndex;
+  assert(Seq.SectionIndex == Address.SectionIndex);
+  // Search for instruction address in the rows describing the sequence.
+  // Rows are stored in a vector, so we may use arithmetical operations with
+  // iterators.
+  DWARFDebugLine::Row row;
+  row.Address = Address;
+  RowIter first_row = Rows.begin() + Seq.FirstRowIndex;
+  RowIter last_row = Rows.begin() + Seq.LastRowIndex;
+  LineTable::RowIter row_pos = std::lower_bound(
+      first_row, last_row, row, DWARFDebugLine::Row::orderByAddress);
+  if (row_pos == last_row) {
+    return Seq.LastRowIndex - 1;
+  }
+  uint32_t index = Seq.FirstRowIndex + (row_pos - first_row);
+  if (row_pos->Address.Address > Address.Address) {
+    if (row_pos == first_row)
+      return UnknownRowIndex;
+    else
+      index--;
+  }
+  assert(Seq.SectionIndex == row_pos->Address.SectionIndex);
+  return index;
+}
+
 uint32_t DWARFDebugLine::LineTable::lookupAddress(
     object::SectionedAddress Address) const {
 
@@ -1264,7 +1293,14 @@ uint32_t DWARFDebugLine::LineTable::lookupAddressImpl(
                                       DWARFDebugLine::Sequence::orderByHighPC);
   if (It == Sequences.end() || It->SectionIndex != Address.SectionIndex)
     return UnknownRowIndex;
-  return findRowInSeq(*It, Address);
+
+  uint32_t index = findRowInSeq(*It, Address);
+  // revert to old row lookup if no line number is available.
+  if (index >= Rows.size() || Rows[index].Line <= 0) {
+    index = findRowInSeqOld(*It, Address);
+  }
+
+  return index;
 }
 
 bool DWARFDebugLine::LineTable::lookupAddressRange(

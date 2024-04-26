@@ -293,6 +293,8 @@ public:
   private:
     uint32_t findRowInSeq(const DWARFDebugLine::Sequence &Seq,
                           object::SectionedAddress Address) const;
+    uint32_t findRowInSeqOld(const DWARFDebugLine::Sequence &Seq,
+                          object::SectionedAddress Address) const;
     std::optional<StringRef>
     getSourceByIndex(uint64_t FileIndex,
                      DILineInfoSpecifier::FileLineInfoKind Kind) const;
