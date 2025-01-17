@@ -63,7 +63,7 @@ SymbolizeResult getSymbolizeResult(const DILineInfo &info, std::string address, 
   return result;
 }
 
-SymbolizeResults BugsnagSymbolize(const char* filePath, bool includeInline, char* addresses[], int addressCount) {
+SymbolizeResults BugsnagSymbolizeV1(const char* filePath, bool includeInline, char* addresses[], int addressCount) {
   symbolize::LLVMSymbolizer::Options Opt;
   Opt.Demangle = false;
   symbolize::LLVMSymbolizer Symbolizer(Opt);
@@ -103,7 +103,7 @@ SymbolizeResults BugsnagSymbolize(const char* filePath, bool includeInline, char
   return retVal;
 }
 
-void DestroySymbolizeResults(SymbolizeResults* symbolizeResults) {
+void DestroySymbolizeResultsV1(SymbolizeResults* symbolizeResults) {
   if (symbolizeResults) {
     destroySymbolizeResults(symbolizeResults);
   }

@@ -23,8 +23,8 @@ typedef struct SymbolizeResults {
   SymbolizeResult* results;
 } SymbolizeResults;
 
-SymbolizeResults BugsnagSymbolize(const char* filePath, bool includeInline, char* addresses[], int addressCount);
-void DestroySymbolizeResults(SymbolizeResults* symbolizeResults);
+SymbolizeResults BugsnagSymbolizeV1(const char* filePath, bool includeInline, char* addresses[], int addressCount);
+void DestroySymbolizeResultsV1(SymbolizeResults* symbolizeResults);
 
 #ifdef __cplusplus
 }
