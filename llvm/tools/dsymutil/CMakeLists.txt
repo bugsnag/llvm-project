@@ -10,14 +10,14 @@ set(LLVM_LINK_COMPONENTS
   CodeGen
   CodeGenTypes
   DWARFLinker
-  DebugInfoDWARF
-  MC
-  Object
-  Option
-  Remarks
-  Support
-  Target
-  TargetParser
+  DebugInfoDWARFV1
+  MCV1
+  ObjectV1
+  OptionV1
+  RemarksV1
+  SupportV1
+  TargetV1
+  TargetParserV1
   )
 
 add_llvm_tool(dsymutil

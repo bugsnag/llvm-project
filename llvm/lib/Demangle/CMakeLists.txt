@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMDemangle
+add_llvm_component_library(LLVMDemangleV1
   Demangle.cpp
   ItaniumDemangle.cpp
   MicrosoftDemangle.cpp

@@ -17,15 +17,15 @@ add_llvm_component_library(LLVMPasses
   AggressiveInstCombine
   Analysis
   CodeGen
-  Core
+  CoreV1
   Coroutines
   IPO
   InstCombine
   IRPrinter
   ObjCARC
   Scalar
-  Support
-  Target
+  SupportV1
+  TargetV1
   TransformUtils
   Vectorize
   Instrumentation

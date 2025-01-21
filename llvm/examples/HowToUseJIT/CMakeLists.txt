@@ -1,10 +1,10 @@
 set(LLVM_LINK_COMPONENTS
-  Core
+  CoreV1
   ExecutionEngine
   Interpreter
-  MC
+  MCV1
   MCJIT
-  Support
+  SupportV1
   nativecodegen
   )
 

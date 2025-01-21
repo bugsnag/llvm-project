@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
   TransformUtils
   BitWriter
-  Core
-  IRReader
-  Support
+  CoreV1
+  IRReaderV1
+  SupportV1
   )
 
 add_llvm_tool(llvm-split

@@ -9,8 +9,8 @@ add_llvm_component_library(LLVMDWP
   intrinsics_gen
 
   LINK_COMPONENTS
-  DebugInfoDWARF
-  MC
-  Object
-  Support
+  DebugInfoDWARFV1
+  MCV1
+  ObjectV1
+  SupportV1
   )

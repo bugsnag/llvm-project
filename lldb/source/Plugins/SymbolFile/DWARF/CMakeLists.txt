@@ -57,8 +57,8 @@ add_lldb_library(lldbPluginSymbolFileDWARF PLUGIN
     clangAST
     clangBasic
   LINK_COMPONENTS
-    DebugInfoDWARF
-    Support
+    DebugInfoDWARFV1
+    SupportV1
   )
 
 add_dependencies(lldbPluginSymbolFileDWARF

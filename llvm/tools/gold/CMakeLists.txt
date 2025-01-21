@@ -9,7 +9,7 @@ if( LLVM_ENABLE_PIC AND LLVM_BINUTILS_INCDIR )
      LTO
      BitWriter
      IPO
-     TargetParser
+     TargetParserV1
      )
 
   add_llvm_library(LLVMgold MODULE

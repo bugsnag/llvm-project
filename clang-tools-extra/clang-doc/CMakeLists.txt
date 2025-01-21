@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
   support
-  BitstreamReader
+  BitstreamReaderV1
   FrontendOpenMP
   )
 

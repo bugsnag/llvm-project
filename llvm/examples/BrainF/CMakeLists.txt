@@ -1,10 +1,10 @@
 set(LLVM_LINK_COMPONENTS
   BitWriter
-  Core
+  CoreV1
   ExecutionEngine
-  MC
+  MCV1
   MCJIT
-  Support
+  SupportV1
   nativecodegen
   )
 

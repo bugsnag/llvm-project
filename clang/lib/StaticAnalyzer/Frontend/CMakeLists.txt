@@ -1,7 +1,7 @@
 include_directories( ${CMAKE_CURRENT_BINARY_DIR}/../Checkers )
 
 set(LLVM_LINK_COMPONENTS
-  Support
+  SupportV1
   )
 
 add_clang_library(clangStaticAnalyzerFrontend

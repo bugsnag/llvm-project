@@ -15,11 +15,11 @@ add_llvm_component_library(LLVMAArch64Desc
   LINK_COMPONENTS
   AArch64Info
   AArch64Utils
-  BinaryFormat
-  CodeGenTypes
-  MC
-  Support
-  TargetParser
+  BinaryFormatV1
+  CodeGenTypesV1
+  MCV1
+  SupportV1
+  TargetParserV1
 
   ADD_TO_COMPONENT
   AArch64

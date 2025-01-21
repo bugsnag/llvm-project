@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  MC
+  MCV1
   MCDisassembler
-  Support
+  SupportV1
   X86Desc
   )
 

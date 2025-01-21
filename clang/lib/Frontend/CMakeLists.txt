@@ -1,12 +1,12 @@
 add_subdirectory(Rewrite)
 
 set(LLVM_LINK_COMPONENTS
-  BitReader
-  BitstreamReader
-  Option
+  BitReaderV1
+  BitstreamReaderV1
+  OptionV1
   ProfileData
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_clang_library(clangFrontend

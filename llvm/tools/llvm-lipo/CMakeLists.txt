@@ -1,12 +1,12 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  Object
-  Option
-  Support
-  TargetParser
-  TextAPI
-  Core
-  BinaryFormat
+  ObjectV1
+  OptionV1
+  SupportV1
+  TargetParserV1
+  TextAPIV1
+  CoreV1
+  BinaryFormatV1
 )
 
 set(LLVM_TARGET_DEFINITIONS LipoOpts.td)

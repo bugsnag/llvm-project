@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  BitReader
+  BitReaderV1
   BitWriter
-  Core
-  Support
+  CoreV1
+  SupportV1
   )
 
 add_llvm_tool(llvm-modextract

@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMTextAPI
+add_llvm_component_library(LLVMTextAPIV1
   Architecture.cpp
   ArchitectureSet.cpp
   InterfaceFile.cpp
@@ -14,7 +14,7 @@ add_llvm_component_library(LLVMTextAPI
   "${LLVM_MAIN_INCLUDE_DIR}/llvm/TextAPI"
 
   LINK_COMPONENTS
-  Support
-  BinaryFormat
-  TargetParser
+  SupportV1
+  BinaryFormatV1
+  TargetParserV1
 )

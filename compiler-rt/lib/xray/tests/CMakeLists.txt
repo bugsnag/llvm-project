@@ -76,11 +76,11 @@ if (NOT APPLE)
       if (COMPILER_RT_HAS_TESTINGSUPPORT)
         list(APPEND XRAY_UNITTEST_LINK_FLAGS -lLLVMTestingSupport)
       endif()
-      list(APPEND XRAY_UNITTEST_LINK_FLAGS -lLLVMSupport -lLLVMDemangle)
+      list(APPEND XRAY_UNITTEST_LINK_FLAGS -lLLVMSupportV1 -lLLVMDemangleV1)
     endif()
   else()
     # We also add the actual libraries to link as dependencies.
-    list(APPEND XRAY_UNITTEST_LINK_FLAGS -lLLVMXRay -lLLVMSupport -lLLVMDemangle -lLLVMTestingSupport)
+    list(APPEND XRAY_UNITTEST_LINK_FLAGS -lLLVMXRay -lLLVMSupportV1 -lLLVMDemangleV1 -lLLVMTestingSupport)
   endif()
 
   append_list_if(COMPILER_RT_HAS_LIBM -lm XRAY_UNITTEST_LINK_FLAGS)

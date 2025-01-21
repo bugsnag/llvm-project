@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMMC
+add_llvm_component_library(LLVMMCV1
   ConstantPools.cpp
   DXContainerPSVInfo.cpp
   ELFObjectWriter.cpp
@@ -75,10 +75,10 @@ add_llvm_component_library(LLVMMC
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/MC
 
   LINK_COMPONENTS
-  Support
-  TargetParser
-  BinaryFormat
-  DebugInfoCodeView
+  SupportV1
+  TargetParserV1
+  BinaryFormatV1
+  DebugInfoCodeViewV1
 
   DEPENDS
   intrinsics_gen

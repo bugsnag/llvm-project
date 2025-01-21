@@ -39,14 +39,14 @@ add_lld_library(lldCommon
 
   LINK_COMPONENTS
   Codegen
-  Core
-  DebugInfoDWARF
-  Demangle
-  MC
-  Option
-  Support
-  Target
-  TargetParser
+  CoreV1
+  DebugInfoDWARFV1
+  DemangleV1
+  MCV1
+  OptionV1
+  SupportV1
+  TargetV1
+  TargetParserV1
 
   LINK_LIBS
   ${LLVM_PTHREAD_LIB}

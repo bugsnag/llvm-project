@@ -13,5 +13,5 @@ add_lldb_library(lldbPluginProcessMachCore PLUGIN
     lldbPluginDynamicLoaderMacOSXDYLD
     lldbPluginObjectFileMachO
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

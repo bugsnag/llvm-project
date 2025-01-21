@@ -77,16 +77,16 @@ add_llvm_target(ARMCodeGen
   AsmPrinter
   CFGuard
   CodeGen
-  CodeGenTypes
-  Core
-  GlobalISel
+  CodeGenTypesV1
+  CoreV1
+  GlobalISelV1
   IPO
-  MC
+  MCV1
   Scalar
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
 
   ADD_TO_COMPONENT

@@ -1,4 +1,4 @@
-set(LLVM_LINK_COMPONENTS Support)
+set(LLVM_LINK_COMPONENTS SupportV1)
 
 add_clang_library(clangToolingSyntax
   BuildTree.cpp

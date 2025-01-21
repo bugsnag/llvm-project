@@ -5,8 +5,8 @@ add_llvm_component_library(LLVMAVRInfo
   AVRTargetInfo.cpp
 
   LINK_COMPONENTS
-  MC
-  Support
+  MCV1
+  SupportV1
 
   ADD_TO_COMPONENT
   AVR

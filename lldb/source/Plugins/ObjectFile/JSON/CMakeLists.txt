@@ -7,6 +7,6 @@ add_lldb_library(lldbPluginObjectFileJSON PLUGIN
     lldbSymbol
     lldbUtility
   LINK_COMPONENTS
-    Support
-    TargetParser
+    SupportV1
+    TargetParserV1
   )

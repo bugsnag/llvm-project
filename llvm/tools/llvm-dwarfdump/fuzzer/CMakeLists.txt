@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  DebugInfoDWARF
-  Object
-  Support
+  DebugInfoDWARFV1
+  ObjectV1
+  SupportV1
   )
 
 add_llvm_fuzzer(llvm-dwarfdump-fuzzer

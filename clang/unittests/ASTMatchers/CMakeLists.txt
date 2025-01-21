@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
   FrontendOpenMP
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_clang_unittest(ASTMatchersTests

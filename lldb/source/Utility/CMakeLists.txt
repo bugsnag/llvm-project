@@ -80,7 +80,7 @@ add_lldb_library(lldbUtility NO_INTERNAL_DEPENDENCIES
     # lldbUtility does not depend on other LLDB libraries
 
   LINK_COMPONENTS
-    BinaryFormat
-    Support
-    TargetParser
+    BinaryFormatV1
+    SupportV1
+    TargetParserV1
   )

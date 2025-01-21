@@ -49,20 +49,20 @@ add_llvm_component_library(LLVMJITLink
   JITLinkTableGen
 
   LINK_COMPONENTS
-  BinaryFormat
-  MC
-  Object
-  Option
+  BinaryFormatV1
+  MCV1
+  ObjectV1
+  OptionV1
   OrcTargetProcess
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 target_link_libraries(LLVMJITLink
   PRIVATE
-  LLVMObject
+  LLVMObjectV1
   LLVMOrcShared
   LLVMOrcTargetProcess
-  LLVMSupport
-  LLVMTargetParser
+  LLVMSupportV1
+  LLVMTargetParserV1
 )

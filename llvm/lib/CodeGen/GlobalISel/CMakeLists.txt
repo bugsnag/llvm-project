@@ -33,11 +33,11 @@ add_llvm_component_library(LLVMGlobalISel
   LINK_COMPONENTS
   Analysis
   CodeGen
-  CodeGenTypes
-  Core
-  MC
+  CodeGenTypesV1
+  CoreV1
+  MCV1
   SelectionDAG
-  Support
-  Target
+  SupportV1
+  TargetV1
   TransformUtils
   )

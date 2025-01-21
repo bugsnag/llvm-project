@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  Core
-  Support
+  CoreV1
+  SupportV1
   ProfileData
   )
 

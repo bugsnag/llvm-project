@@ -1,13 +1,13 @@
 set(LLVM_LINK_COMPONENTS
-  Core
+  CoreV1
   ExecutionEngine
-  IRReader
+  IRReaderV1
   JITLink
   OrcJIT
   OrcShared
   OrcTargetProcess
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   nativecodegen
   )
 

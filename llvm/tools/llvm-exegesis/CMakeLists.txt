@@ -4,11 +4,11 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  CodeGenTypes
-  MC
-  MCParser
-  Support
-  TargetParser
+  CodeGenTypesV1
+  MCV1
+  MCParserV1
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-exegesis

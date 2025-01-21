@@ -12,12 +12,12 @@ add_llvm_component_library(LLVMFrontendOpenMP
   omp_gen
 
   LINK_COMPONENTS
-  Core
-  Support
-  TargetParser
+  CoreV1
+  SupportV1
+  TargetParserV1
   TransformUtils
   Analysis
-  MC
+  MCV1
   Scalar
-  BitReader
+  BitReaderV1
   )

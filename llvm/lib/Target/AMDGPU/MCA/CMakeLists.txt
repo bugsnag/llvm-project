@@ -5,12 +5,12 @@ add_llvm_component_library(LLVMAMDGPUTargetMCA
   AMDGPUDesc
   AMDGPUInfo
   AMDGPUUtils
-  CodeGenTypes
-  MC
+  CodeGenTypesV1
+  MCV1
   MCA
-  MCParser
-  Support
-  TargetParser
+  MCParserV1
+  SupportV1
+  TargetParserV1
 
   ADD_TO_COMPONENT
   AMDGPU

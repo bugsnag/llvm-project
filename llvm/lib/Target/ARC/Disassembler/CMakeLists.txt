@@ -3,9 +3,9 @@ add_llvm_component_library(LLVMARCDisassembler
 
   LINK_COMPONENTS
   ARCInfo
-  CodeGenTypes
+  CodeGenTypesV1
   MCDisassembler
-  Support
+  SupportV1
 
   ADD_TO_COMPONENT
   ARC

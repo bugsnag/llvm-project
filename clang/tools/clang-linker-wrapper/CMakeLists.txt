@@ -1,18 +1,18 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
   BitWriter
-  Core
-  BinaryFormat
-  MC
-  Target
+  CoreV1
+  BinaryFormatV1
+  MCV1
+  TargetV1
   TransformUtils
   Analysis
   Passes
-  IRReader
-  Object
-  Option
-  Support
-  TargetParser
+  IRReaderV1
+  ObjectV1
+  OptionV1
+  SupportV1
+  TargetParserV1
   CodeGen
   LTO
   )

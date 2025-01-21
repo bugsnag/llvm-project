@@ -3,11 +3,11 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  MC
-  MCParser
-  Object
-  Support
-  Symbolize
+  MCV1
+  MCParserV1
+  ObjectV1
+  SupportV1
+  SymbolizeV1
   )
 
 add_llvm_tool(llvm-cfi-verify

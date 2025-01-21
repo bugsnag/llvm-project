@@ -4,14 +4,14 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  BitReader
-  Core
+  BitReaderV1
+  CoreV1
   CodeGen
   LTO
-  MC
+  MCV1
   MCDisassembler
-  Support
-  Target
+  SupportV1
+  TargetV1
   )
 
 set(SOURCES

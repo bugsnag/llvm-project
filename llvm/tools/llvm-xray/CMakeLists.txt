@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  Object
-  Support
-  Symbolize
+  ObjectV1
+  SupportV1
+  SymbolizeV1
   XRay
   )
 

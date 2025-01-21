@@ -131,7 +131,7 @@ if [[ ! -d ${LLVM_BUILD} ]]; then
   $LLVM_SRC
 fi
 cd ${LLVM_BUILD}
-ninja LLVMSymbolize LLVMObject LLVMBinaryFormat LLVMDebugInfoDWARF LLVMSupport LLVMDebugInfoPDB LLVMDebuginfod LLVMMC LLVMDemangle LLVMTextAPI LLVMTargetParser
+ninja LLVMSymbolizeV1 LLVMObjectV1 LLVMBinaryFormatV1 LLVMDebugInfoDWARFV1 LLVMSupportV1 LLVMDebugInfoPDBV1 LLVMDebuginfodV1 LLVMMCV1 LLVMDemangleV1 LLVMTextAPIV1 LLVMTargetParserV1
 
 cd ${BUILD_DIR}
 rm -rf ${SYMBOLIZER_BUILD}

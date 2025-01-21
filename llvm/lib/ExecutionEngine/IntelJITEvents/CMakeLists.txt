@@ -46,10 +46,10 @@ add_llvm_component_library(LLVMIntelJITEvents
 
   LINK_COMPONENTS
   CodeGen
-  Core
-  DebugInfoDWARF
-  Support
-  Object
+  CoreV1
+  DebugInfoDWARFV1
+  SupportV1
+  ObjectV1
   ExecutionEngine
 )
 

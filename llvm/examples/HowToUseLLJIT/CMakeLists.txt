@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  Core
+  CoreV1
   OrcJIT
-  Support
+  SupportV1
   nativecodegen
   )
 

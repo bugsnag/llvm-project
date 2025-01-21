@@ -13,7 +13,7 @@ add_llvm_library(PrintFunctionNames MODULE PrintFunctionNames.cpp PLUGIN_TOOL cl
 
 if(WIN32 OR CYGWIN)
   set(LLVM_LINK_COMPONENTS
-    Support
+    SupportV1
   )
   clang_target_link_libraries(PrintFunctionNames PRIVATE
     clangAST

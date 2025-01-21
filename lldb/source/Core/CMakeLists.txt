@@ -92,9 +92,9 @@ add_lldb_library(lldbCore
     clangDriver
 
   LINK_COMPONENTS
-    Support
-    Demangle
-    TargetParser
+    SupportV1
+    DemangleV1
+    TargetParserV1
   )
 
 add_dependencies(lldbCore

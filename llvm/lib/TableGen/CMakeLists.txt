@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMTableGen
+add_llvm_component_library(LLVMTableGenV1
   DetailedRecordsBackend.cpp
   Error.cpp
   JSONBackend.cpp
@@ -16,5 +16,5 @@ add_llvm_component_library(LLVMTableGen
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/TableGen
 
   LINK_COMPONENTS
-  Support
+  SupportV1
   )

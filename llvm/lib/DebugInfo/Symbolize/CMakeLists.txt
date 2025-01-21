@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMSymbolize
+add_llvm_component_library(LLVMSymbolizeV1
   DIPrinter.cpp
   Markup.cpp
   MarkupFilter.cpp
@@ -10,10 +10,10 @@ add_llvm_component_library(LLVMSymbolize
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/DebugInfo/Symbolize
 
   LINK_COMPONENTS
-  DebugInfoDWARF
-  DebugInfoPDB
-  Object
-  Support
-  Demangle
-  TargetParser
+  DebugInfoDWARFV1
+  DebugInfoPDBV1
+  ObjectV1
+  SupportV1
+  DemangleV1
+  TargetParserV1
   )

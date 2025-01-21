@@ -11,10 +11,10 @@ add_llvm_component_library(LLVMAVRDesc
   AVRTargetStreamer.cpp
 
   LINK_COMPONENTS
-  MC
+  MCV1
   AVRInfo
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
 
   ADD_TO_COMPONENT
   AVR

@@ -104,7 +104,7 @@ add_lldb_library(liblldb SHARED ${option_framework}
     lldbVersion
     ${LLDB_ALL_PLUGINS}
   LINK_COMPONENTS
-    Support
+    SupportV1
 
   ${option_install_prefix}
 )

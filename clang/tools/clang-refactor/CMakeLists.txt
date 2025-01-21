@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  Option
-  Support
+  OptionV1
+  SupportV1
   )
 
 add_clang_tool(clang-refactor

@@ -4,10 +4,10 @@ include_directories(
   )
 
 set(LLVM_LINK_COMPONENTS
-  MC
-  Support
-  Target
-  TargetParser
+  MCV1
+  SupportV1
+  TargetV1
+  TargetParserV1
   PowerPCCodeGen
   PowerPCDesc
   PowerPCInfo

@@ -8,8 +8,8 @@ include_directories(include)
 add_subdirectory(include)
 
 set(LLVM_LINK_COMPONENTS
-  Core
-  Support
+  CoreV1
+  SupportV1
   nativecodegen
   OrcJIT
   )

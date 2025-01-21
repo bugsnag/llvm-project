@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  MC
-  Support
+  MCV1
+  Supportv1
   AArch64Desc
   )
 

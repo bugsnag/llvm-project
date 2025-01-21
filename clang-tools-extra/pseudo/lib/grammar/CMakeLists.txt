@@ -1,4 +1,4 @@
-set(LLVM_LINK_COMPONENTS Support)
+set(LLVM_LINK_COMPONENTS SupportV1)
 
 # This library is used by the clang-pseudo-gen tool which runs at build time.
 # Dependencies should be minimal to avoid long dep paths in the build graph.

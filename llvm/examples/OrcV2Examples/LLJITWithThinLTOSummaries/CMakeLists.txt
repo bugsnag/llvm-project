@@ -1,11 +1,11 @@
 set(LLVM_LINK_COMPONENTS
-  BitReader
-  Core
+  BitReaderV1
+  CoreV1
   ExecutionEngine
   OrcJIT
   OrcTargetProcess
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   nativecodegen
   )
 

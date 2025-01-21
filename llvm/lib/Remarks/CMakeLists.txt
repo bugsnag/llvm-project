@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMRemarks
+add_llvm_component_library(LLVMRemarksV1
   BitstreamRemarkParser.cpp
   BitstreamRemarkSerializer.cpp
   Remark.cpp
@@ -15,8 +15,8 @@ add_llvm_component_library(LLVMRemarks
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/Remarks
 
   LINK_COMPONENTS
-  BitstreamReader
-  Support
+  BitstreamReaderV1
+  SupportV1
 
   DEPENDS
   intrinsics_gen

@@ -3,9 +3,9 @@ add_llvm_component_library(LLVMBPFDisassembler
 
   LINK_COMPONENTS
   MCDisassembler
-  MC
+  MCV1
   BPFInfo
-  Support
+  SupportV1
 
   ADD_TO_COMPONENT
   BPF

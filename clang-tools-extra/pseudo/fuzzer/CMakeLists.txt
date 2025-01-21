@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
   FuzzerCLI
-  Support
+  SupportV1
   )
 
 add_llvm_fuzzer(clang-pseudo-fuzzer

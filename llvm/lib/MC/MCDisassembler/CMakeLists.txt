@@ -6,7 +6,7 @@ add_llvm_component_library(LLVMMCDisassembler
   MCSymbolizer.cpp
 
   LINK_COMPONENTS
-  MC
-  Support
-  TargetParser
+  MCV1
+  SupportV1
+  TargetParserV1
   )

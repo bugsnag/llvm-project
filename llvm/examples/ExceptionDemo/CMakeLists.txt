@@ -1,11 +1,11 @@
 set(LLVM_LINK_COMPONENTS
-  Core
-  ExecutionEngine
-  MC
+  CoreV1
+  ExecutionEngineV1
+  MCV1
   MCJIT
   RuntimeDyld
-  Support
-  Target
+  SupportV1
+  TargetV1
   nativecodegen
   )
 

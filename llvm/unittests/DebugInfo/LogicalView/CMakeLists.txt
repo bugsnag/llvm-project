@@ -3,9 +3,9 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDisassemblers
   AllTargetsInfos
   DebugInfoLogicalView
-  MC
+  MCV1
   MCDisassembler
-  TargetParser
+  TargetParserV1
   )
 
 add_llvm_unittest_with_input_files(DebugInfoLogicalViewTests

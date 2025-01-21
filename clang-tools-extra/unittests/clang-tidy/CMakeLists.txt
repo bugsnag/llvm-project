@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
   FrontendOpenMP
-  Support
+  SupportV1
   )
 
 if(CLANG_BUILT_STANDALONE)

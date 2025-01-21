@@ -8,6 +8,6 @@ add_lldb_library(lldbPluginObjectFileCOFF PLUGIN
     lldbTarget
 
   LINK_COMPONENTS
-    BinaryFormat
-    Object
-    Support)
+    BinaryFormatV1
+    ObjectV1
+    SupportV1)

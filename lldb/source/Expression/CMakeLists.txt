@@ -27,7 +27,7 @@ add_lldb_library(lldbExpression NO_PLUGIN_DEPENDENCIES
     lldbUtility
 
   LINK_COMPONENTS
-    Core
+    CoreV1
     ExecutionEngine
-    Support
+    SupportV1
   )

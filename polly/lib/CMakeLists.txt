@@ -28,7 +28,7 @@ set(POLLY_COMPONENTS
     IRReader
     Analysis
     # The libraries below are required for darwin: http://PR26392
-    BitReader
+    BitReaderV1
     MCParser
     Object
     ProfileData

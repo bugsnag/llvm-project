@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMBitReader
+add_llvm_component_library(LLVMBitReaderV1
   BitcodeAnalyzer.cpp
   BitReader.cpp
   BitcodeReader.cpp
@@ -12,8 +12,8 @@ add_llvm_component_library(LLVMBitReader
   intrinsics_gen
 
   LINK_COMPONENTS
-  BitstreamReader
-  Core
-  Support
-  TargetParser
+  BitstreamReaderV1
+  CoreV1
+  SupportV1
+  TargetParserV1
   )

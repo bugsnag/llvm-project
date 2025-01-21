@@ -5,9 +5,9 @@ set(LLVM_OPTIONAL_SOURCES
 get_property(dialect_libs GLOBAL PROPERTY MLIR_DIALECT_LIBS)
 get_property(conversion_libs GLOBAL PROPERTY MLIR_CONVERSION_LIBS)
 set(LLVM_LINK_COMPONENTS
-  Core
-  Support
-  AsmParser
+  CoreV1
+  SupportV1
+  AsmParserV1
   )
 
 if(MLIR_INCLUDE_TESTS)

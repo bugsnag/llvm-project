@@ -90,7 +90,7 @@ if (NOT LLVM_INSTALL_TOOLCHAIN_ONLY)
       target_include_directories(CTTestTidyModule PUBLIC BEFORE "${CLANG_TOOLS_SOURCE_DIR}")
       if(CLANG_PLUGIN_SUPPORT AND (WIN32 OR CYGWIN))
         set(LLVM_LINK_COMPONENTS
-          Support
+          SupportV1
         )
       endif()
   endif()

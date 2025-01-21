@@ -1,6 +1,6 @@
 # For a better template to copy, see examples/standalone
 set(LLVM_LINK_COMPONENTS
-  Support
+  SupportV1
   )
 
 add_toy_chapter(toyc-ch1

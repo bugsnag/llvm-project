@@ -23,7 +23,7 @@ add_flang_library(FIRDialect
   MLIRTargetLLVMIRExport
 
   LINK_COMPONENTS
-  AsmParser
+  AsmParserV1
   AsmPrinter
-  Remarks
+  RemarksV1
 )

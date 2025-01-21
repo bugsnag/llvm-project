@@ -2,11 +2,11 @@ set(LLVM_LINK_COMPONENTS
     AllTargetsDescs
     AllTargetsDisassemblers
     AllTargetsInfos
-    MC
+    MCV1
     MCDisassembler
-    MCParser
-    Support
-    TargetParser
+    MCParserV1
+    SupportV1
+    TargetParserV1
 )
 add_llvm_fuzzer(llvm-mc-disassemble-fuzzer
   llvm-mc-disassemble-fuzzer.cpp

@@ -1,5 +1,5 @@
 static_library("Reader") {
-  output_name = "LLVMBitReader"
+  output_name = "LLVMBitReaderV1"
   deps = [
     "//llvm/include/llvm/Config:llvm-config",
     "//llvm/lib/Bitstream/Reader",

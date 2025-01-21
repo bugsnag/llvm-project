@@ -5,5 +5,5 @@ target_link_libraries(ClangPseudoBenchmark
   clangPseudo
   clangPseudoCLI
   clangPseudoGrammar
-  LLVMSupport
+  LLVMSupportV1
   )

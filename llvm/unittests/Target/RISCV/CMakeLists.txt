@@ -7,8 +7,8 @@ set(LLVM_LINK_COMPONENTS
   RISCVCodeGen
   RISCVDesc
   RISCVInfo
-  TargetParser
-  MC
+  TargetParserV1
+  MCV1
   )
 
 add_llvm_target_unittest(RISCVTests

@@ -5,19 +5,19 @@ set(LLVM_LINK_COMPONENTS
     AllTargetsInfos
     Analysis
     AsmPrinter
-    BitReader
+    BitReaderV1
     BitWriter
     CodeGen
-    Core
+    CoreV1
     FuzzerCLI
     FuzzMutate
-    IRReader
-    MC
+    IRReaderV1
+    MCV1
     ScalarOpts
     SelectionDAG
-    Support
-    Target
-    TargetParser
+    SupportV1
+    TargetV1
+    TargetParserV1
 )
 add_llvm_fuzzer(llvm-isel-fuzzer
   llvm-isel-fuzzer.cpp

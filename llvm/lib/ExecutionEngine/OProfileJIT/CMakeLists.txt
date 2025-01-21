@@ -6,8 +6,8 @@ add_llvm_component_library(LLVMOProfileJIT
   OProfileWrapper.cpp
 
   LINK_COMPONENTS
-  DebugInfoDWARF
-  Support
-  Object
+  DebugInfoDWARFV1
+  SupportV1
+  ObjectV1
   ExecutionEngine
   )

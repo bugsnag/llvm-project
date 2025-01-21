@@ -9,5 +9,5 @@ add_lldb_library(lldbPluginObjectFileMachO PLUGIN
     lldbUtility
     lldbPluginProcessUtility
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

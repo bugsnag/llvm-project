@@ -1,7 +1,7 @@
 set( LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  Option
-  Support
+  OptionV1
+  SupportV1
   )
 
 add_clang_tool(clang-check

@@ -116,7 +116,7 @@ endif()
 
 add_subdirectory(BLAKE3)
 
-add_llvm_component_library(LLVMSupport
+add_llvm_component_library(LLVMSupportV1
   ABIBreak.cpp
   AMDGPUMetadata.cpp
   APFixedPoint.cpp
@@ -275,7 +275,7 @@ add_llvm_component_library(LLVMSupport
   ${system_libs} ${imported_libs} ${delayload_flags}
 
   LINK_COMPONENTS
-  Demangle
+  DemangleV1
   )
 
 set(llvm_system_libs ${system_libs})
@@ -316,22 +316,22 @@ if(LLVM_ENABLE_TERMINFO)
   set(llvm_system_libs ${llvm_system_libs} "${terminfo_library}")
 endif()
 
-set_property(TARGET LLVMSupport PROPERTY LLVM_SYSTEM_LIBS "${llvm_system_libs}")
+set_property(TARGET LLVMSupportV1 PROPERTY LLVM_SYSTEM_LIBS "${llvm_system_libs}")
 
 
 if(LLVM_INTEGRATED_CRT_ALLOC)
   if(LLVM_INTEGRATED_CRT_ALLOC MATCHES "snmalloc$")
-    set_property(TARGET LLVMSupport PROPERTY CXX_STANDARD 17)
+    set_property(TARGET LLVMSupportV1 PROPERTY CXX_STANDARD 17)
     add_compile_definitions(_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING)
     if ("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang" AND
         "${CMAKE_SYSTEM_PROCESSOR}" MATCHES "x86_64")
-      set_property(TARGET LLVMSupport PROPERTY COMPILE_FLAGS "-mcx16")
+      set_property(TARGET LLVMSupportV1 PROPERTY COMPILE_FLAGS "-mcx16")
     endif()
   endif()
 endif()
 
 if(LLVM_WITH_Z3)
-  target_include_directories(LLVMSupport SYSTEM
+  target_include_directories(LLVMSupportV1 SYSTEM
     PRIVATE
     ${Z3_INCLUDE_DIR}
     )

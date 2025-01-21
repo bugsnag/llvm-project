@@ -14,10 +14,10 @@ add_llvm_component_library(LLVMTarget
 
   LINK_COMPONENTS
   Analysis
-  Core
-  MC
-  Support
-  TargetParser
+  CoreV1
+  MCV1
+  SupportV1
+  TargetParserV1
   )
 
 # When building shared objects for each target there are some internal APIs

@@ -8,7 +8,7 @@ add_subdirectory(framework)
 add_subdirectory(test-client)
 
 set(LLVM_LINK_COMPONENTS
-  Support
+  SupportV1
   )
 
 # Needed by LLVM's CMake checks because this file defines multiple targets.

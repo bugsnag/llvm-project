@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  AsmParser
-  Core
-  Support
+  AsmParserV1
+  CoreV1
+  SupportV1
   )
 
 add_llvm_unittest(AsmParserTests

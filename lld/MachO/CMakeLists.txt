@@ -36,21 +36,21 @@ add_lld_library(lldMachO
 
   LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  BinaryFormat
-  BitReader
+  BinaryFormatV1
+  BitReaderV1
   BitWriter
-  Core
-  DebugInfoDWARF
-  Demangle
+  coreV1
+  DebugInfoDWARFV1
+  DemangleV1
   LTO
-  MC
+  MCV1
   ObjCARCOpts
-  Object
-  Option
+  ObjectV1
+  OptionV1
   Passes
-  Support
-  TargetParser
-  TextAPI
+  Supportv1
+  TargetParserV1
+  TextAPIV1
 
   LINK_LIBS
   lldCommon

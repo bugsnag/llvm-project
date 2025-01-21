@@ -2,12 +2,12 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  MC
+  MCV1
   MCDisassembler
-  Object
-  Support
-  Symbolize
-  TargetParser
+  ObjectV1
+  SupportV1
+  SymbolizeV1
+  TargetParserV1
   )
 
 add_llvm_tool(sancov

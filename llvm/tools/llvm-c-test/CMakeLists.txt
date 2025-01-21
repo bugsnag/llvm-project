@@ -4,12 +4,12 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  BitReader
-  Core
+  BitReaderV1
+  CoreV1
   MCDisassembler
-  Object
-  Support
-  Target
+  ObjectV1
+  SupportV1
+  TargetV1
   )
 
 # We should only have llvm-c-test use libLLVM if libLLVM is built with the

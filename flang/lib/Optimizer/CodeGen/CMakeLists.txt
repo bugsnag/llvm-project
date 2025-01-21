@@ -29,8 +29,8 @@ add_flang_library(FIRCodeGen
   MLIRTargetLLVMIRExport
 
   LINK_COMPONENTS
-  AsmParser
+  AsmParserV1
   AsmPrinter
-  Remarks
-  TargetParser
+  RemarksV1
+  TargetParserV1
 )

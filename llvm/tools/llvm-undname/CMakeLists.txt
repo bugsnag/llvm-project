@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  Demangle
-  Support
+  DemangleV1
+  SupportV1
   )
 
 add_llvm_tool(llvm-undname

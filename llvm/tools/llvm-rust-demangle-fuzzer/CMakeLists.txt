@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  Demangle
+  DemangleV1
   FuzzerCLI
-  Support
+  SupportV1
 )
 
 add_llvm_fuzzer(llvm-rust-demangle-fuzzer

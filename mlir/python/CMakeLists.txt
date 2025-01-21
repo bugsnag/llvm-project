@@ -272,7 +272,7 @@ declare_mlir_python_extension(MLIRPythonExtension.Core
     Pass.h
     PybindUtils.h
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPIDebug
     MLIRCAPIIR
@@ -295,7 +295,7 @@ declare_mlir_python_extension(MLIRPythonExtension.RegisterEverything
   SOURCES
     RegisterEverything.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPIConversion
     MLIRCAPITransforms
@@ -309,7 +309,7 @@ declare_mlir_python_extension(MLIRPythonExtension.Dialects.Linalg.Pybind
   SOURCES
     DialectLinalg.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPIIR
     MLIRCAPILinalg
@@ -322,7 +322,7 @@ declare_mlir_python_extension(MLIRPythonExtension.Dialects.Quant.Pybind
   SOURCES
     DialectQuant.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPIIR
     MLIRCAPIQuant
@@ -335,7 +335,7 @@ declare_mlir_python_extension(MLIRPythonExtension.Dialects.PDL.Pybind
   SOURCES
     DialectPDL.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPIIR
     MLIRCAPIPDL
@@ -348,7 +348,7 @@ declare_mlir_python_extension(MLIRPythonExtension.Dialects.SparseTensor.Pybind
   SOURCES
     DialectSparseTensor.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPIIR
     MLIRCAPISparseTensor
@@ -361,7 +361,7 @@ declare_mlir_python_extension(MLIRPythonExtension.Dialects.Transform.Pybind
   SOURCES
     DialectTransform.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPIIR
     MLIRCAPITransformDialect
@@ -374,7 +374,7 @@ declare_mlir_python_extension(MLIRPythonExtension.AsyncDialectPasses
   SOURCES
     AsyncPasses.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPIAsync
 )
@@ -387,7 +387,7 @@ if(MLIR_ENABLE_EXECUTION_ENGINE)
     SOURCES
       ExecutionEngineModule.cpp
     PRIVATE_LINK_LIBS
-      LLVMSupport
+      LLVMSupportV1
     EMBED_CAPI_LINK_LIBS
       MLIRCAPIExecutionEngine
   )
@@ -400,7 +400,7 @@ declare_mlir_python_extension(MLIRPythonExtension.GPUDialectPasses
   SOURCES
     GPUPasses.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPIGPU
 )
@@ -412,7 +412,7 @@ declare_mlir_python_extension(MLIRPythonExtension.LinalgPasses
   SOURCES
     LinalgPasses.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPILinalg
 )
@@ -424,7 +424,7 @@ declare_mlir_python_extension(MLIRPythonExtension.SparseTensorDialectPasses
   SOURCES
     SparseTensorPasses.cpp
   PRIVATE_LINK_LIBS
-    LLVMSupport
+    LLVMSupportV1
   EMBED_CAPI_LINK_LIBS
     MLIRCAPISparseTensor
 )
@@ -467,7 +467,7 @@ if(MLIR_INCLUDE_TESTS)
     SOURCES
       PythonTestModule.cpp
     PRIVATE_LINK_LIBS
-      LLVMSupport
+      LLVMSupportV1
     EMBED_CAPI_LINK_LIBS
       MLIRCAPIPythonTestDialect
   )

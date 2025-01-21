@@ -8,11 +8,11 @@ tablegen(LLVM Opts.inc -gen-opt-parser-defs)
 add_public_tablegen_target(SymbolizerOptsTableGen)
 
 set(LLVM_LINK_COMPONENTS
-  Demangle
-  Object
-  Option
-  Support
-  Symbolize
+  DemangleV1
+  ObjectV1
+  OptionV1
+  SupportV1
+  SymbolizeV1
   )
 
 add_llvm_tool(llvm-symbolizer
@@ -22,7 +22,7 @@ add_llvm_tool(llvm-symbolizer
   SymbolizerOptsTableGen
   )
 
-target_link_libraries(llvm-symbolizer PRIVATE LLVMDebuginfod)
+target_link_libraries(llvm-symbolizer PRIVATE LLVMDebuginfodV1)
 
 add_llvm_tool_symlink(llvm-addr2line llvm-symbolizer)
 

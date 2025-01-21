@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 find_first_existing_vc_file("${LLVM_MAIN_SRC_DIR}" llvm_vc)

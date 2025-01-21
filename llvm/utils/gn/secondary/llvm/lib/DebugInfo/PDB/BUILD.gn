@@ -2,7 +2,7 @@ import("//llvm/lib/DebugInfo/PDB/enable_dia.gni")
 import("//llvm/utils/gn/build/sysroot.gni")
 
 static_library("PDB") {
-  output_name = "LLVMDebugInfoPDB"
+  output_name = "LLVMDebugInfoPDBV1"
   deps = [
     "//llvm/include/llvm/Config:config",
     "//llvm/lib/DebugInfo/CodeView",

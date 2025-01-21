@@ -1,10 +1,10 @@
 set(LLVM_LINK_COMPONENTS
-  Core
+  CoreV1
   ExecutionEngine
-  Object
+  ObjectV1
   OrcJIT
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   native
   )
 

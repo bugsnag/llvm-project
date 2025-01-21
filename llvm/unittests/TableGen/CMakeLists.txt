@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  TableGen
-  Support
+  TableGenV1
+  SupportV1
   )
 
 set(LLVM_TARGET_DEFINITIONS Automata.td)
@@ -15,4 +15,4 @@ add_llvm_unittest(TableGenTests DISABLE_LLVM_LINK_LLVM_DYLIB
   ParserEntryPointTest.cpp
   )
 
-target_link_libraries(TableGenTests PRIVATE LLVMTableGenGlobalISel LLVMTableGen)
+target_link_libraries(TableGenTests PRIVATE LLVMTableGenGlobalISelV1 LLVMTableGenV1)

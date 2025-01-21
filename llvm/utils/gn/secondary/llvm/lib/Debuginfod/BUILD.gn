@@ -1,5 +1,5 @@
 static_library("Debuginfod") {
-  output_name = "LLVMDebuginfod"
+  output_name = "LLVMDebuginfodV1"
   deps = [
     "//llvm/lib/DebugInfo/Symbolize",
     "//llvm/lib/Support",

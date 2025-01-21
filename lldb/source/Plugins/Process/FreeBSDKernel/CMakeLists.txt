@@ -23,5 +23,5 @@ add_lldb_library(lldbPluginProcessFreeBSDKernel PLUGIN
     lldbTarget
     ${FBSDKERNEL_LIBS}
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

@@ -3,18 +3,18 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsCodeGens
   AllTargetsDescs
   AllTargetsInfos
-  BitReader
+  BitReaderV1
   BitWriter
   CodeGen
-  Core
-  IRReader
+  CoreV1
+  IRReaderV1
   IPO
   LTO
-  MC
-  Object
-  Support
-  Target
-  TargetParser
+  MCV1
+  ObjectV1
+  SupportV1
+  TargetV1
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-lto

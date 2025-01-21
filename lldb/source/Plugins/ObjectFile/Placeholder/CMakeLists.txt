@@ -7,6 +7,6 @@ add_lldb_library(lldbPluginObjectFilePlaceholder PLUGIN
     lldbSymbol
     lldbTarget
   LINK_COMPONENTS
-    Object
-    Support
+    ObjectV1
+    SupportV1
   )

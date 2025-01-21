@@ -170,20 +170,20 @@ add_llvm_target(AMDGPUCodeGen
   AMDGPUUtils
   Analysis
   AsmPrinter
-  BinaryFormat
+  BinaryFormatV1
   CodeGen
-  CodeGenTypes
-  Core
-  GlobalISel
+  CodeGenTypesV1
+  CoreV1
+  GlobalISelV1
   IPO
-  MC
+  MCV1
   MIRParser
   Passes
   Scalar
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   Vectorize
 

@@ -40,7 +40,7 @@ add_llvm_target(CSKYCodeGen
   Core
   MC
   SelectionDAG
-  Support
+  SupportV1
   Target
 
   ADD_TO_COMPONENT

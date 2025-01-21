@@ -6,7 +6,7 @@ set(LLVM_COMMON_DEPENDS_OLD ${LLVM_COMMON_DEPENDS})
 list(REMOVE_ITEM LLVM_COMMON_DEPENDS clang-tablegen-targets)
 
 set(LLVM_LINK_COMPONENTS
-  Support
+  SupportV1
   )
 
 set(clangSupport_sources

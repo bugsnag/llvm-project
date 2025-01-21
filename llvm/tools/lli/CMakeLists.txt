@@ -4,23 +4,23 @@ endif()
 
 set(LLVM_LINK_COMPONENTS
   CodeGen
-  Core
+  CoreV1
   ExecutionEngine
-  IRReader
+  IRReaderV1
   Interpreter
   JITLink
-  MC
+  MCV1
   MCJIT
-  Object
+  ObjectV1
   OrcShared
   OrcJIT
   OrcTargetProcess
   Passes
   RuntimeDyld
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   native
   )
@@ -35,18 +35,18 @@ endif( LLVM_USE_OPROFILE )
 if( LLVM_USE_INTEL_JITEVENTS )
   set(LLVM_LINK_COMPONENTS
     ${LLVM_LINK_COMPONENTS}
-    DebugInfoDWARF
+    DebugInfoDWARFV1
     IntelJITEvents
-    Object
+    ObjectV1
     )
 endif( LLVM_USE_INTEL_JITEVENTS )
 
 if( LLVM_USE_PERF )
   set(LLVM_LINK_COMPONENTS
     ${LLVM_LINK_COMPONENTS}
-    DebugInfoDWARF
+    DebugInfoDWARFV1
     PerfJITEvents
-    Object
+    ObjectV1
     )
 endif( LLVM_USE_PERF )
 

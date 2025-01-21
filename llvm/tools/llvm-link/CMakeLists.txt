@@ -1,12 +1,12 @@
 set(LLVM_LINK_COMPONENTS
-  BinaryFormat
-  BitReader
+  BinaryFormatV1
+  BitReaderV1
   BitWriter
-  Core
-  IRReader
+  CoreV1
+  IRReaderV1
   Linker
-  Object
-  Support
+  ObjectV1
+  SupportV1
   TransformUtils
   IPO
   )

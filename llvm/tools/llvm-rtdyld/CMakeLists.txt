@@ -2,13 +2,13 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDisassemblers
   AllTargetsDescs
   AllTargetsInfos
-  DebugInfoDWARF
+  DebugInfoDWARFV1
   ExecutionEngine
-  MC
-  Object
+  MCV1
+  ObjectV1
   RuntimeDyld
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-rtdyld

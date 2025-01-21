@@ -1,5 +1,5 @@
 static_library("TargetParser") {
-  output_name = "LLVMTargetParser"
+  output_name = "LLVMTargetParserV1"
   deps = [ "//llvm/lib/Support" ]
   public_deps = [ "//llvm/include/llvm/TargetParser:gen" ]
   include_dirs = [

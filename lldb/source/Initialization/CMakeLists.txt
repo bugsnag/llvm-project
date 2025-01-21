@@ -18,5 +18,5 @@ add_lldb_library(lldbInitialization
     ${EXTRA_PLUGINS}
     ${LLDB_SYSTEM_LIBS}
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  Support
+  SupportV1
   )
 
 add_clang_unittest(CrossTUTests

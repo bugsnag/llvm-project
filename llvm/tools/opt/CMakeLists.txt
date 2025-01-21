@@ -4,26 +4,26 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsInfos
   AggressiveInstCombine
-  Analysis
-  AsmParser
+  AnalysisV1
+  AsmParserV1
   BitWriter
   CFGuard
   CodeGen
-  Core
+  CoreV1
   Coroutines
   Extensions
   IPO
-  IRReader
+  IRReaderV1
   IRPrinter
   InstCombine
   Instrumentation
-  MC
+  MCV1
   ObjCARCOpts
-  Remarks
+  RemarksV1
   ScalarOpts
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   Vectorize
   Passes

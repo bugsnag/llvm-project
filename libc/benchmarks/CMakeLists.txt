@@ -1,8 +1,8 @@
 find_package(Threads)
 
 set(LLVM_LINK_COMPONENTS
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 #==============================================================================
@@ -88,8 +88,8 @@ add_library(libc-benchmark
 target_link_libraries(libc-benchmark
     PUBLIC
     benchmark::benchmark
-    LLVMSupport
-    LLVMTargetParser
+    LLVMSupportV1
+    LLVMTargetParserV1
     Threads::Threads
 )
 add_dependencies(libc-benchmark google-benchmark-libc)

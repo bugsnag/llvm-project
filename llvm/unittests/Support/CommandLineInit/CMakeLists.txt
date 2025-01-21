@@ -20,7 +20,7 @@ if(SUPPORTS_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS_FLAG)
   list(APPEND LLVM_COMPILE_FLAGS "-Wno-gnu-zero-variadic-macro-arguments")
 endif()
 
-list(APPEND LLVM_LINK_COMPONENTS Support)
+list(APPEND LLVM_LINK_COMPONENTS SupportV1)
 
 add_llvm_executable(${test_name}
   IGNORE_EXTERNALIZE_DEBUGINFO NO_INSTALL_RPATH

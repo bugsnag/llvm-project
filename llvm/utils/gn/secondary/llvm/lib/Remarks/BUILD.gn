@@ -1,5 +1,5 @@
 static_library("Remarks") {
-  output_name = "LLVMRemarks"
+  output_name = "LLVMRemarksV1"
   deps = [
     "//llvm/lib/Bitstream/Reader",
     "//llvm/lib/Support",

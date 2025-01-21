@@ -31,10 +31,10 @@ add_llvm_component_library(LLVMObjectYAML
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/ObjectYAML
 
   LINK_COMPONENTS
-  BinaryFormat
-  Object
-  Support
-  TargetParser
-  DebugInfoCodeView
-  MC
+  BinaryFormatV1
+  ObjectV1
+  SupportV1
+  TargetParserV1
+  DebugInfoCodeViewV1
+  MCV1
   )

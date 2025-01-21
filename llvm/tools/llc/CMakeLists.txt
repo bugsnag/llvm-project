@@ -6,17 +6,17 @@ set(LLVM_LINK_COMPONENTS
   Analysis
   AsmPrinter
   CodeGen
-  CodeGenTypes
-  Core
-  IRReader
-  MC
+  CodeGenTypesV1
+  CoreV1
+  IRReaderV1
+  MCV1
   MIRParser
-  Remarks
+  RemarksV1
   ScalarOpts
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   Vectorize
   )

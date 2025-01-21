@@ -7,5 +7,5 @@ add_lldb_library(lldbPluginObjectFileWasm PLUGIN
     lldbSymbol
     lldbUtility
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

@@ -2,7 +2,7 @@
 # on clang either programmatically or conceptually.
 
 set(LLVM_LINK_COMPONENTS
-  Support
+  SupportV1
   )
 
 if(CLANG_BUILT_STANDALONE)

@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
-  BinaryFormat
-  MC
-  Object
+  BinaryFormatV1
+  MCV1
+  ObjectV1
   RuntimeDyld
-  Support
+  SupportV1
   )
 
 add_llvm_library(LLVMBOLTRuntimeLibs

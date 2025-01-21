@@ -23,5 +23,5 @@ add_lldb_library(lldbPluginAppleObjCRuntime PLUGIN
   CLANG_LIBS
     clangAST
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

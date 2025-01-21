@@ -1,5 +1,5 @@
 static_library("TableGen") {
-  output_name = "LLVMTableGen"
+  output_name = "LLVMTableGenV1"
   deps = [ "//llvm/lib/Support" ]
   sources = [
     "DetailedRecordsBackend.cpp",

@@ -7,5 +7,5 @@ add_lldb_library(lldbPluginProcessPOSIX
     lldbPluginProcessUtility
     lldbUtility
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

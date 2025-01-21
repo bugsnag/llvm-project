@@ -1,10 +1,10 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
   JITLink
-  Object
+  ObjectV1
   OrcShared
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_unittest(JITLinkTests

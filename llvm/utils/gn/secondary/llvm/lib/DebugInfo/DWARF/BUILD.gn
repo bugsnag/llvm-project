@@ -1,5 +1,5 @@
 static_library("DWARF") {
-  output_name = "LLVMDebugInfoDWARF"
+  output_name = "LLVMDebugInfoDWARFV1"
   deps = [
     "//llvm/lib/BinaryFormat",
     "//llvm/lib/MC",

@@ -1,6 +1,6 @@
 if(CLANG_ENABLE_PROTO_FUZZER)
   set(LLVM_LINK_COMPONENTS
-    Support
+    SupportV1
     )
 
   add_llvm_fuzzer(lldb-expression-fuzzer

@@ -27,11 +27,11 @@ add_llvm_component_library(LLVMFuzzMutate
 
   LINK_COMPONENTS
   Analysis
-  BitReader
+  BitReaderV1
   BitWriter
-  Core
+  CoreV1
   Scalar
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   TransformUtils
   )

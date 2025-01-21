@@ -1,11 +1,11 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
-  Core
+  CoreV1
   FrontendOpenACC
   FrontendOpenMP
   Passes
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   TransformUtils
   )
 

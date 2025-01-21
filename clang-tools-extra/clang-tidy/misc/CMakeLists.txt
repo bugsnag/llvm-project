@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
   FrontendOpenMP
-  Support
+  SupportV1
   )
 
 setup_host_tool(clang-tidy-confusable-chars-gen CLANG_TIDY_CONFUSABLE_CHARS_GEN clang_tidy_confusable_chars_gen clang_tidy_confusable_chars_gen_target)

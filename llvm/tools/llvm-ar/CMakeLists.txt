@@ -2,13 +2,13 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsAsmParsers
   AllTargetsDescs
   AllTargetsInfos
-  BinaryFormat
-  Core
+  BinaryFormatV1
+  CoreV1
   DlltoolDriver
   LibDriver
-  Object
-  Support
-  TargetParser
+  ObjectV1
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-ar

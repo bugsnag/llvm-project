@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
-  AsmParser
-  Core
-  Support
+  AsmParserV1
+  CoreV1
+  SupportV1
 )
 add_llvm_fuzzer(vfabi-demangler-fuzzer
   vfabi-demangler-fuzzer.cpp

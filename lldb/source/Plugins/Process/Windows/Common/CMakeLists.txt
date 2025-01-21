@@ -31,5 +31,5 @@ add_lldb_library(lldbPluginProcessWindowsCommon PLUGIN
     rpcrt4
     psapi
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

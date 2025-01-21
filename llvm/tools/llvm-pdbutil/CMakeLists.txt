@@ -1,11 +1,11 @@
 set(LLVM_LINK_COMPONENTS
-  BinaryFormat
-  DebugInfoCodeView
-  DebugInfoMSF
-  DebugInfoPDB
-  Object
+  BinaryFormatV1
+  DebugInfoCodeViewV1
+  DebugInfoMSFV1
+  DebugInfoPDBV1
+  ObjectV1
   ObjectYAML
-  Support
+  SupportV1
   )
 
 add_llvm_tool(llvm-pdbutil

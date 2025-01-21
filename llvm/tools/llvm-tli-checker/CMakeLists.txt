@@ -1,18 +1,18 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
-  BinaryFormat
-  BitReader
-  BitstreamReader
-  Core
-  Demangle
-  MC
-  MCParser
-  Object
-  Option
-  Remarks
-  Support
-  TargetParser
-  TextAPI
+  BinaryFormatV1
+  BitReaderV1
+  BitstreamReaderV1
+  CoreV1
+  DemangleV1
+  MCV1
+  MCParserV1
+  ObjectV1
+  OptionV1
+  RemarksV1
+  SupportV1
+  TargetParserV1
+  TextAPIV1
   )
 
 set(LLVM_TARGET_DEFINITIONS Opts.td)

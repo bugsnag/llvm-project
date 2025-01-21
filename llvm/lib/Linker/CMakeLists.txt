@@ -9,9 +9,9 @@ add_llvm_component_library(LLVMLinker
   intrinsics_gen
 
   LINK_COMPONENTS
-  Core
-  Object
-  Support
+  CoreV1
+  ObjectV1
+  SupportV1
   TransformUtils
-  TargetParser
+  TargetParserV1
   )

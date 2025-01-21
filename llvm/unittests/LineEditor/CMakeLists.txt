@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
   LineEditor
-  Support
+  SupportV1
   )
 
 add_llvm_unittest(LineEditorTests

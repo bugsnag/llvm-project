@@ -8,9 +8,9 @@ add_llvm_component_library(LLVMAMDGPUDisassembler
   AMDGPUInfo
   AMDGPUUtils
   CodeGenTypes
-  MC
+  MCV1
   MCDisassembler
-  Support
+  SupportV1
 
   ADD_TO_COMPONENT
   AMDGPU

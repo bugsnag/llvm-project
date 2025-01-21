@@ -1,5 +1,5 @@
 static_library("TextAPI") {
-  output_name = "LLVMTextAPI"
+  output_name = "LLVMTextAPIV1"
   deps = [
     "//llvm/lib/BinaryFormat",
     "//llvm/lib/Support",

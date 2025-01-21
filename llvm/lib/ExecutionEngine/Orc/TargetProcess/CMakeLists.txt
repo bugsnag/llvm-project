@@ -21,6 +21,6 @@ add_llvm_component_library(LLVMOrcTargetProcess
 
   LINK_COMPONENTS
   OrcShared
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )

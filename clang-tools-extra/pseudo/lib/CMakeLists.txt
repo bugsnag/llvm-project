@@ -2,7 +2,7 @@ add_subdirectory(cli)
 add_subdirectory(cxx)
 add_subdirectory(grammar)
 
-set(LLVM_LINK_COMPONENTS Support)
+set(LLVM_LINK_COMPONENTS SupportV1)
 
 add_clang_library(clangPseudo
   Bracket.cpp

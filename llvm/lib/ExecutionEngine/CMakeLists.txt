@@ -14,14 +14,14 @@ add_llvm_component_library(LLVMExecutionEngine
   intrinsics_gen
 
   LINK_COMPONENTS
-  Core
-  MC
-  Object
+  CoreV1
+  MCV1
+  ObjectV1
   OrcTargetProcess
   RuntimeDyld
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   )
 
 if(BUILD_SHARED_LIBS)

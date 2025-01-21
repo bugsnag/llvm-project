@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  Core
+  CoreV1
   OrcJIT
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_clang_unittest(ClangReplInterpreterTests

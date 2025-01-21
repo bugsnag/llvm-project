@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  DebugInfoDWARF
+  DebugInfoDWARFV1
   DebugInfoGSYM
-  MC
-  Support
+  MCV1
+  SupportV1
   ObjectYAML
   )
 

@@ -41,15 +41,15 @@ add_llvm_target(BPFCodeGen
   BPFDesc
   BPFInfo
   CodeGen
-  CodeGenTypes
-  Core
+  CodeGenTypesV1
+  CoreV1
   IPO
-  MC
+  MCV1
   Scalar
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
 
   ADD_TO_COMPONENT

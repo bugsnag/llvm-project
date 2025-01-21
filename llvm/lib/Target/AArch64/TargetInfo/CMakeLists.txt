@@ -4,8 +4,8 @@ add_llvm_component_library(LLVMAArch64Info
   AArch64TargetInfo.cpp
 
   LINK_COMPONENTS
-  MC
-  Support
+  MCV1
+  SupportV1
 
   ADD_TO_COMPONENT
   AArch64

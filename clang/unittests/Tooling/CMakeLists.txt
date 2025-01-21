@@ -1,10 +1,10 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  MC
-  Option
+  MCV1
+  OptionV1
   FrontendOpenMP
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 

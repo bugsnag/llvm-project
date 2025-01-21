@@ -6,9 +6,9 @@ link_directories(${LLVM_LIBRARY_DIR})
 
 set( LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  Option
-  Support
-  TargetParser
+  OptionV1
+  SupportV1
+  TargetParserV1
 )
 
 add_flang_tool(flang-new

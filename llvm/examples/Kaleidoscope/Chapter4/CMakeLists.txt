@@ -1,13 +1,13 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
-  Core
+  CoreV1
   ExecutionEngine
   InstCombine
-  Object
+  ObjectV1
   OrcJIT
   RuntimeDyld
   ScalarOpts
-  Support
+  SupportV1
   native
   )
 

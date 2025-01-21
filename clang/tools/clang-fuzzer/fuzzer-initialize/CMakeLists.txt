@@ -1,3 +1,3 @@
-set(LLVM_LINK_COMPONENTS ${LLVM_TARGETS_TO_BUILD} Support)
+set(LLVM_LINK_COMPONENTS ${LLVM_TARGETS_TO_BUILD} SupportV1)
 
 add_clang_library(clangFuzzerInitialize fuzzer_initialize.cpp)

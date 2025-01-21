@@ -6,17 +6,17 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  BinaryFormat
+  BinaryFormatV1
   ExecutionEngine
   JITLink
-  MC
-  Object
+  MCV1
+  ObjectV1
   OrcJIT
   OrcShared
   OrcTargetProcess
   RuntimeDyld
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-jitlink

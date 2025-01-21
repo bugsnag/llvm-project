@@ -1,5 +1,5 @@
 static_library("AsmParser") {
-  output_name = "LLVMAsmParser"
+  output_name = "LLVMAsmParserV1"
   deps = [
     "//llvm/lib/BinaryFormat",
     "//llvm/lib/IR",

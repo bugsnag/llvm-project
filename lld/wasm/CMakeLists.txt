@@ -20,16 +20,16 @@ add_lld_library(lldWasm
 
   LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  BinaryFormat
-  Core
-  Demangle
+  BinaryFormatV1
+  CoreV1
+  DemangleV1
   LTO
-  MC
-  Object
-  Option
+  MCV1
+  ObjectV1
+  OptionV1
   Passes
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
 
   LINK_LIBS
   lldCommon

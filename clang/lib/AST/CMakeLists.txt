@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
-  BinaryFormat
-  Core
-  FrontendOpenMP
-  Support
-  TargetParser
+  BinaryFormatV1
+  CoreV1
+  FrontendOpenMPV1
+  SupportV1
+  TargetParserV1
   )
 
 # FIXME: the entry points to the interpreter should be moved out of clangAST

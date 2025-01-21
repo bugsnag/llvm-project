@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
   ObjectYAML
-  Support
+  SupportV1
   )
 
 add_llvm_utility(yaml2obj

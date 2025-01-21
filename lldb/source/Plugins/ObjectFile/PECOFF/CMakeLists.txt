@@ -25,9 +25,9 @@ add_lldb_library(lldbPluginObjectFilePECOFF PLUGIN
     lldbTarget
     ${DBGHELP_LINK_FILES}
   LINK_COMPONENTS
-    BinaryFormat
-    Support
-    TargetParser
+    BinaryFormatV1
+    SupportV1
+    TargetParserV1
   )
 
 add_dependencies(lldbPluginObjectFilePECOFF

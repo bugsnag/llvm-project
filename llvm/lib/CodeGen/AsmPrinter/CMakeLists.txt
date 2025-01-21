@@ -32,16 +32,16 @@ add_llvm_component_library(LLVMAsmPrinter
 
   LINK_COMPONENTS
   Analysis
-  BinaryFormat
+  BinaryFormatV1
   CodeGen
-  CodeGenTypes
-  Core
-  DebugInfoCodeView
-  DebugInfoDWARF
-  MC
-  MCParser
-  Remarks
-  Support
-  Target
-  TargetParser
+  CodeGenTypesV1
+  CoreV1
+  DebugInfoCodeViewV1
+  DebugInfoDWARFV1
+  MCV1
+  MCParserV1
+  RemarksV1
+  SupportV1
+  TargetV1
+  TargetParserV1
   )

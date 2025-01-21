@@ -24,7 +24,7 @@ endif()
 
 # This provides the implementation of MVT and LLT.
 # Be careful to append deps on this, since Targets' tablegens depend on this.
-add_llvm_component_library(LLVMCodeGenTypes
+add_llvm_component_library(LLVMCodeGenTypesV1
   LowLevelType.cpp
   PARTIAL_SOURCES_INTENDED
 
@@ -32,7 +32,7 @@ add_llvm_component_library(LLVMCodeGenTypes
   vt_gen
 
   LINK_COMPONENTS
-  Support
+  SupportV1
   )
 
 add_llvm_component_library(LLVMCodeGen
@@ -273,17 +273,17 @@ add_llvm_component_library(LLVMCodeGen
 
   LINK_COMPONENTS
   Analysis
-  BitReader
+  BitReaderV1
   BitWriter
-  CodeGenTypes
-  Core
-  MC
+  CodeGenTypesV1
+  CoreV1
+  MCV1
   ObjCARC
   ProfileData
   Scalar
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   )
 

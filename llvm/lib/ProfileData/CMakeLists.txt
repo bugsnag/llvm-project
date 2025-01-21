@@ -20,13 +20,13 @@ add_llvm_component_library(LLVMProfileData
   intrinsics_gen
 
   LINK_COMPONENTS
-  Core
-  Object
-  Support
-  Demangle
-  Symbolize
-  DebugInfoDWARF
-  TargetParser
+  CoreV1
+  ObjectV1
+  SupportV1
+  DemangleV1
+  SymbolizeV1
+  DebugInfoDWARFV1
+  TargetParserV1
   )
 
 add_subdirectory(Coverage)

@@ -1,5 +1,5 @@
 static_library("IR") {
-  output_name = "LLVMCore"
+  output_name = "LLVMCoreV1"
   public_deps = [
     # Must be public_dep because IR's public headers include llvm-config.h.
     "//llvm/include/llvm/Config:llvm-config",

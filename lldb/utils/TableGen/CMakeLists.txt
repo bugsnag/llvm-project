@@ -5,7 +5,7 @@ if (NOT DEFINED LLDB_TABLEGEN_EXE)
   if (TARGET lldb-tblgen)
     set(LLDB_TABLEGEN_EXE $<TARGET_FILE:lldb-tblgen> CACHE STRING "")
   else()
-    set(LLVM_LINK_COMPONENTS Support)
+    set(LLVM_LINK_COMPONENTS SupportV1)
 
     add_tablegen(lldb-tblgen LLDB
       LLDBOptionDefEmitter.cpp

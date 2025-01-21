@@ -60,18 +60,18 @@ add_llvm_component_library(LLVMOrcJIT
   ${atomic_lib}
 
   LINK_COMPONENTS
-  Core
+  CoreV1
   ExecutionEngine
   JITLink
-  Object
+  ObjectV1
   OrcShared
   OrcTargetProcess
   WindowsDriver
-  MC
+  MCV1
   Passes
   RuntimeDyld
-  Support
-  Target
+  SupportV1
+  TargetV1
   TargetParser
   TransformUtils
   )
@@ -82,7 +82,7 @@ add_subdirectory(TargetProcess)
 target_link_libraries(LLVMOrcJIT
   PRIVATE
   LLVMAnalysis
-  LLVMBitReader
+  LLVMBitReaderV1
   LLVMBitWriter
   LLVMPasses
   )

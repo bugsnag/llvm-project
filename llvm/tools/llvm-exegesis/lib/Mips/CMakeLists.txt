@@ -5,12 +5,12 @@ include_directories(
 
 set(LLVM_LINK_COMPONENTS
   CodeGenTypes
-  Core
+  CoreV1
   Exegesis
-  MC
+  MCV1
   Mips
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_library(LLVMExegesisMips

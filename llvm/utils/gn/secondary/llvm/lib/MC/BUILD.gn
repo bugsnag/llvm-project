@@ -1,5 +1,5 @@
 static_library("MC") {
-  output_name = "LLVMMC"
+  output_name = "LLVMMCV1"
   deps = [
     "//llvm/include/llvm/Config:config",
     "//llvm/lib/BinaryFormat",

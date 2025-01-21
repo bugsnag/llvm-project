@@ -7,18 +7,18 @@ set(LLVM_LINK_COMPONENTS
   BitWriter
   CodeGen
   Extensions
-  Core
+  CoreV1
   IPO
-  IRReader
+  IRReaderV1
   AggressiveInstCombine
   InstCombine
   Instrumentation
   Linker
   ObjCARCOpts
   ScalarOpts
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   Vectorize
   )

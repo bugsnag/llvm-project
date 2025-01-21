@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
-  Core
+  CoreV1
   Vectorize
-  AsmParser
-  TargetParser
+  AsmParserV1
+  TargetParserV1
   )
 
 add_llvm_unittest(VectorizeTests

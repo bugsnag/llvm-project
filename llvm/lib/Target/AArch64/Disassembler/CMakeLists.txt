@@ -8,9 +8,9 @@ add_llvm_component_library(LLVMAArch64Disassembler
   AArch64Desc
   AArch64Info
   AArch64Utils
-  MC
+  MCV1
   MCDisassembler
-  Support
+  SupportV1
 
   ADD_TO_COMPONENT
   AArch64

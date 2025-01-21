@@ -1,6 +1,6 @@
 include(TableGen)
 
-set(LLVM_LINK_COMPONENTS Support)
+set(LLVM_LINK_COMPONENTS SupportV1)
 
 add_tablegen(libc-hdrgen LIBC
   Command.h

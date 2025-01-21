@@ -24,21 +24,21 @@ add_lld_library(lldCOFF
 
   LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  BinaryFormat
-  Core
-  DebugInfoCodeView
-  DebugInfoDWARF
-  DebugInfoMSF
-  DebugInfoPDB
-  Demangle
+  BinaryFormatV1
+  CoreV1
+  DebugInfoCodeViewV1
+  DebugInfoDWARFV1
+  DebugInfoMSFV1
+  DebugInfoPDBV1
+  DemangleV1
   LibDriver
   LTO
-  MC
-  Object
-  Option
+  MCV1
+  ObjectV1
+  OptionV1
   Passes
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   WindowsDriver
   WindowsManifest
 

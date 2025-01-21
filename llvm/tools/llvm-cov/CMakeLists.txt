@@ -1,10 +1,10 @@
 set(LLVM_LINK_COMPONENTS
-  Core
-  Support
-  Object
+  CoreV1
+  SupportV1
+  ObjectV1
   Coverage
   ProfileData
-  TargetParser
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-cov
@@ -22,4 +22,4 @@ add_llvm_tool(llvm-cov
   TestingSupport.cpp
   )
 
-target_link_libraries(llvm-cov PRIVATE LLVMDebuginfod)
+target_link_libraries(llvm-cov PRIVATE LLVMDebuginfodV1)

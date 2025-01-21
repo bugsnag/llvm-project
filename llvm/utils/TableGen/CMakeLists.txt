@@ -11,12 +11,12 @@ add_llvm_library(LLVMTableGenCommon STATIC OBJECT EXCLUDE_FROM_ALL
   PARTIAL_SOURCES_INTENDED
 
   LINK_COMPONENTS
-  Support
-  TableGen
+  SupportV1
+  TableGenV1
   )
 set_target_properties(LLVMTableGenCommon PROPERTIES FOLDER "Tablegenning")
 
-set(LLVM_LINK_COMPONENTS Support)
+set(LLVM_LINK_COMPONENTS SupportV1)
 
 add_tablegen(llvm-min-tblgen LLVM_HEADERS
   TableGen.cpp
@@ -26,8 +26,8 @@ add_tablegen(llvm-min-tblgen LLVM_HEADERS
 set_target_properties(llvm-min-tblgen PROPERTIES FOLDER "Tablegenning")
 
 set(LLVM_LINK_COMPONENTS
-  CodeGenTypes
-  Support
+  CodeGenTypesV1
+  SupportV1
   )
 
 add_tablegen(llvm-tblgen LLVM
@@ -90,5 +90,5 @@ add_tablegen(llvm-tblgen LLVM
   DEPENDS
   intrinsics_gen # via llvm-min-tablegen
   )
-target_link_libraries(llvm-tblgen PRIVATE LLVMTableGenGlobalISel)
+target_link_libraries(llvm-tblgen PRIVATE LLVMTableGenGlobalISelV1)
 set_target_properties(llvm-tblgen PROPERTIES FOLDER "Tablegenning")

@@ -2,9 +2,9 @@ set(LLVM_LINK_COMPONENTS
   AMDGPUCodeGen
   AMDGPUDesc
   AMDGPUInfo
-  MC
-  Support
-  TargetParser
+  MCV1
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_unittest(AMDGPUDwarfTests

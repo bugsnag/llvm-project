@@ -36,12 +36,12 @@ add_llvm_target(AVRCodeGen
   AVRInfo
   AsmPrinter
   CodeGen
-  CodeGenTypes
-  Core
-  MC
+  CodeGenTypesV1
+  CoreV1
+  MCV1
   SelectionDAG
-  Support
-  Target
+  SupportV1
+  TargetV1
 
   ADD_TO_COMPONENT
   AVR

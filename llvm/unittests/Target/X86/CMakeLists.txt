@@ -5,17 +5,17 @@ include_directories(
 
 set(LLVM_LINK_COMPONENTS
   Analysis
-  AsmParser
+  AsmParserV1
   CodeGen
-  CodeGenTypes
-  Core
+  CodeGenTypesV1
+  CoreV1
   InstCombine
-  MC
+  MCV1
   MIRParser
   Passes
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   X86CodeGen
   X86Desc
   X86Info

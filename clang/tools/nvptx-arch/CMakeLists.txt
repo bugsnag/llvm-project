@@ -6,7 +6,7 @@
 # //
 # //===--------------------------------------------------------------------===//
 
-set(LLVM_LINK_COMPONENTS Support)
+set(LLVM_LINK_COMPONENTS SupportV1)
 add_clang_tool(nvptx-arch NVPTXArch.cpp)
 
 find_package(CUDAToolkit QUIET)

@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  MC
-  Object
-  Support
+  MCV1
+  ObjectV1
+  SupportV1
   )
 
 add_bolt_tool(llvm-bolt-heatmap

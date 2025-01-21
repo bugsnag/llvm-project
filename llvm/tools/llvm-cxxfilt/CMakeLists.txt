@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  Demangle
-  Option
-  Support
-  TargetParser
+  DemangleV1
+  OptionV1
+  SupportV1
+  TargetParserV1
   )
 
 set(LLVM_TARGET_DEFINITIONS Opts.td)

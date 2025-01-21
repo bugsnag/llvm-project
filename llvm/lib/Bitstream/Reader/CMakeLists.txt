@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMBitstreamReader
+add_llvm_component_library(LLVMBitstreamReaderV1
   BitstreamReader.cpp
 
   ADDITIONAL_HEADER_DIRS
@@ -6,5 +6,5 @@ add_llvm_component_library(LLVMBitstreamReader
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/Bitstream
 
   LINK_COMPONENTS
-  Support
+  SupportV1
   )

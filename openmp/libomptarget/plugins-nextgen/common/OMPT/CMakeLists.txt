@@ -25,25 +25,25 @@ else()
     ${LLVM_TARGETS_TO_BUILD}
     AggressiveInstCombine
     Analysis
-    BinaryFormat
-    BitReader
+    BinaryFormatV1
+    BitReaderV1
     BitWriter
     CodeGen
-    Core
+    CoreV1
     Extensions
     InstCombine
     Instrumentation
     IPO
-    IRReader
+    IRReaderV1
     Linker
-    MC
-    Object
+    MCV1
+    ObjectV1
     Passes
-    Remarks
+    RemarksV1
     ScalarOpts
-    Support
-    Target
-    TargetParser
+    SupportV1
+    TargetV1
+    TargetParserV1
     TransformUtils
     Vectorize
   )

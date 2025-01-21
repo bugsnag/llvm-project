@@ -1,4 +1,4 @@
 set(LLVM_LINK_COMPONENTS
-  Support)
+  SupportV1)
 
 add_benchmark(DummyYAML DummyYAML.cpp)

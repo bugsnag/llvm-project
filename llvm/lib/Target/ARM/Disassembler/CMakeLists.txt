@@ -6,9 +6,9 @@ add_llvm_component_library(LLVMARMDisassembler
   ARMInfo
   ARMUtils
   CodeGenTypes
-  MC
+  MCV1
   MCDisassembler
-  Support
+  SupportV1
 
   ADD_TO_COMPONENT
   ARM

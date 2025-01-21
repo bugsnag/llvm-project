@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMDebugInfoMSF
+add_llvm_component_library(LLVMDebugInfoMSFV1
   MappedBlockStream.cpp
   MSFBuilder.cpp
   MSFCommon.cpp
@@ -7,5 +7,5 @@ add_llvm_component_library(LLVMDebugInfoMSF
   "${LLVM_MAIN_INCLUDE_DIR}/llvm/DebugInfo/MSF"
 
   LINK_COMPONENTS
-  Support
+  SupportV1
   )

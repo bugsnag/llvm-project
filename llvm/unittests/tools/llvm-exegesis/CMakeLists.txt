@@ -3,13 +3,13 @@ set(exegesis_includes
   )
 
 set(LLVM_LINK_COMPONENTS
-  CodeGenTypes
-  MC
-  MCParser
-  Object
-  Support
-  Symbolize
-  TargetParser
+  CodeGenTypesV1
+  MCV1
+  MCParserV1
+  ObjectV1
+  SupportV1
+  SymbolizeV1
+  TargetParserV1
   )
 
 set(exegesis_sources

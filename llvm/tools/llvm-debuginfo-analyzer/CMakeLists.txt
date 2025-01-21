@@ -2,14 +2,14 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  BinaryFormat
-  DebugInfoCodeView
+  BinaryFormatV1
+  DebugInfoCodeViewV1
   DebugInfoLogicalView
-  DebugInfoPDB
-  MC
+  DebugInfoPDBV1
+  MCV1
   MCDisassembler
-  Object
-  Support
+  ObjectV1
+  SupportV1
   )
 
 add_llvm_tool(llvm-debuginfo-analyzer

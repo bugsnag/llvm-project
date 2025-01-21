@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMBinaryFormat
+add_llvm_component_library(LLVMBinaryFormatV1
   AMDGPUMetadataVerifier.cpp
   COFF.cpp
   Dwarf.cpp
@@ -18,6 +18,6 @@ add_llvm_component_library(LLVMBinaryFormat
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/BinaryFormat
 
   LINK_COMPONENTS
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )

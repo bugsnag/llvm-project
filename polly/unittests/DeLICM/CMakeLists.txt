@@ -1,6 +1,6 @@
 # Solaris ld requires this dependency to be made explicit for shared builds.
 set(LLVM_LINK_COMPONENTS
-  Core
+  CoreV1
   )
 
 add_polly_unittest(DeLICMTests

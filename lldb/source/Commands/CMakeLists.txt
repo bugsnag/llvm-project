@@ -56,7 +56,7 @@ add_lldb_library(lldbCommands NO_PLUGIN_DEPENDENCIES
     lldbVersion
 
   LINK_COMPONENTS
-    Support
+    SupportV1
   )
 
 add_dependencies(lldbCommands LLDBOptionsGen)

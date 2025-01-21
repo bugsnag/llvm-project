@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  AsmParser
-  Core
+  AsmParserV1
+  CoreV1
   FuzzMutate
-  Support
+  SupportV1
   )
 
 add_llvm_unittest(FuzzMutateTests

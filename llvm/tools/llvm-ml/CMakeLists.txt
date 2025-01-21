@@ -3,11 +3,11 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  MC
-  MCParser
-  Option
-  Support
-  TargetParser
+  MCV1
+  MCParserV1
+  OptionV1
+  SupportV1
+  TargetParserV1
   )
 
 set(LLVM_TARGET_DEFINITIONS Opts.td)

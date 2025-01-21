@@ -1,5 +1,5 @@
 static_library("Support") {
-  output_name = "LLVMSupport"
+  output_name = "LLVMSupportV1"
   deps = [
     "BLAKE3",
     "//llvm/include/llvm/Config:config",

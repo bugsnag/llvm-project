@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  MC
-  Option
-  Support
-  TargetParser
+  MCV1
+  OptionV1
+  SupportV1
+  TargetParserV1
   )
 
 add_clang_unittest(ClangDriverTests

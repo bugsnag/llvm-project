@@ -1,10 +1,10 @@
 set(LLVM_LINK_COMPONENTS
-  BinaryFormat
+  BinaryFormatV1
   InterfaceStub
   ObjectYAML
-  Option
-  Support
-  TargetParser
+  OptionV1
+  SupportV1
+  TargetParserV1
   TextAPI
   )
 

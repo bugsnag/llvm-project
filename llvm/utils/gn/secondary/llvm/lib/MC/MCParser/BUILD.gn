@@ -1,5 +1,5 @@
 static_library("MCParser") {
-  output_name = "LLVMMCParser"
+  output_name = "LLVMMCParserV1"
   deps = [
     "//llvm/lib/MC",
     "//llvm/lib/Support",

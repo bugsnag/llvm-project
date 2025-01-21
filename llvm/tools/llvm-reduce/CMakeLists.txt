@@ -4,19 +4,19 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsInfos
   Analysis
-  BitReader
+  BitReaderV1
   BitWriter
   CodeGen
   CodeGenTypes
-  Core
+  CoreV1
   IPO
-  IRReader
-  MC
+  IRReaderV1
+  MCV1
   MIRParser
   Passes
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   )
 

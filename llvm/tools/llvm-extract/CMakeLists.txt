@@ -1,12 +1,12 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
   BitWriter
-  Core
+  CoreV1
   IPO
-  IRReader
+  IRReaderV1
   IRPrinter
   Passes
-  Support
+  SupportV1
   )
 
 add_llvm_tool(llvm-extract

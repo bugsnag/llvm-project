@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
   FuzzerCLI
-  Support
+  SupportV1
   )
 
 # This fuzzer runs on oss-fuzz, so keep it around even if it looks unreferenced.

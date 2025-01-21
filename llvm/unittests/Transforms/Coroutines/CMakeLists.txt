@@ -1,11 +1,11 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
-  AsmParser
-  Core
+  AsmParserV1
+  CoreV1
   Coroutines
   Passes
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   TransformUtils
   )
 

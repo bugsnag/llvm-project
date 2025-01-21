@@ -1,32 +1,32 @@
 set(LLVM_LINK_COMPONENTS
   AggressiveInstCombine
   Analysis
-  BitReader
+  BitReaderV1
   BitWriter
-  CodeGenTypes
-  Core
+  CodeGenTypesV1
+  CoreV1
   Coroutines
   Coverage
-  Demangle
+  DemangleV1
   Extensions
   FrontendHLSL
   FrontendOpenMP
   IPO
   IRPrinter
-  IRReader
+  IRReaderV1
   InstCombine
   Instrumentation
   LTO
   Linker
-  MC
+  MCV1
   ObjCARCOpts
-  Object
+  ObjectV1
   Passes
   ProfileData
   ScalarOpts
-  Support
+  SupportV1
   Target
-  TargetParser
+  TargetParserV1
   TransformUtils
   )
 

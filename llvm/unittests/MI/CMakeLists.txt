@@ -1,13 +1,13 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
   CodeGen
-  CodeGenTypes
-  Core
-  MC
+  CodeGenTypesV1
+  CoreV1
+  MCV1
   MIRParser
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   )
 
 add_llvm_unittest(MITests

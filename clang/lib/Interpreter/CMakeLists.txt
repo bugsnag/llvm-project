@@ -1,13 +1,13 @@
 set(LLVM_LINK_COMPONENTS
-   core
+   coreV1
    native
-   Option
+   OptionV1
    OrcJit
    OrcShared
    OrcTargetProcess
-   Support
-   Target
-   TargetParser
+   SupportV1
+   TargetV1
+   TargetParserV1
   )
 
 add_clang_library(clangInterpreter

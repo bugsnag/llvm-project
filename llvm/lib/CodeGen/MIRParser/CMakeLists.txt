@@ -11,11 +11,11 @@ add_llvm_component_library(LLVMMIRParser
 
   LINK_COMPONENTS
   AsmParser
-  BinaryFormat
+  BinaryFormatV1
   CodeGen
-  CodeGenTypes
-  Core
-  MC
-  Support
-  Target
+  CodeGenTypesV1
+  CoreV1
+  MCV1
+  SupportV1
+  TargetV1
   )

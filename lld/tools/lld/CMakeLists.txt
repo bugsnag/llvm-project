@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_lld_tool(lld

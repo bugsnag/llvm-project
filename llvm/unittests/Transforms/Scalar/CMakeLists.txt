@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
-  AsmParser
-  Core
+  AsmParserV1
+  CoreV1
   Passes
-  Support
+  SupportV1
   ScalarOpts
   TransformUtils
   )

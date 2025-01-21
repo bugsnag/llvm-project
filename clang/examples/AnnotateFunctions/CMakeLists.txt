@@ -2,7 +2,7 @@ add_llvm_library(AnnotateFunctions MODULE AnnotateFunctions.cpp PLUGIN_TOOL clan
 
 if(WIN32 OR CYGWIN)
   set(LLVM_LINK_COMPONENTS
-    Support
+    SupportV1
   )
   clang_target_link_libraries(AnnotateFunctions PRIVATE
     clangAST

@@ -7,12 +7,12 @@ add_llvm_component_library(LLVMAMDGPUUtils
 
   LINK_COMPONENTS
   Analysis
-  BinaryFormat
-  CodeGenTypes
-  Core
-  MC
-  Support
-  TargetParser
+  BinaryFormatV1
+  CodeGenTypesV1
+  CoreV1
+  MCV1
+  SupportV1
+  TargetParserV1
 
   ADD_TO_COMPONENT
   AMDGPU

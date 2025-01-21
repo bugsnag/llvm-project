@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
-  IRReader
-  BitReader
+  IRReaderV1
+  BitReaderV1
   BitWriter
-  Core
-  Support
+  CoreV1
+  SupportV1
   )
 
 add_llvm_tool(llvm-cat

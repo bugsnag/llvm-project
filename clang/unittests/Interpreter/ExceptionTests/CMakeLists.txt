@@ -5,9 +5,9 @@ set(LLVM_REQUIRES_RTTI ON)
 
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  Core
+  CoreV1
   OrcJIT
-  Support
+  SupportV1
   )
 
 add_clang_unittest(ClangReplInterpreterExceptionTests

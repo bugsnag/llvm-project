@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  Object
-  Support
+  ObjectV1
+  SupportV1
   )
 
 add_llvm_tool(llvm-bat-dump

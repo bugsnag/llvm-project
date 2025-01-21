@@ -185,7 +185,7 @@ Variables for Building Programs
     libraries must be specified without their ``lib`` prefix.  For example, to
     link with a driver that performs an IR transformation you might set
     ``LLVMLIBS`` to this minimal set of libraries ``LLVMSupport.a LLVMCore.a
-    LLVMBitReader.a LLVMAsmParser.a LLVMAnalysis.a LLVMTransformUtils.a
+    LLVMBitReaderV1.a LLVMAsmParser.a LLVMAnalysis.a LLVMTransformUtils.a
     LLVMScalarOpts.a LLVMTarget.a``.
 
     Note that this works only for statically linked libraries. LLVM is split

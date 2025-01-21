@@ -4,21 +4,21 @@ link_directories( ${LLVM_INTEL_JITEVENTS_LIBDIR} )
 include_directories( ${LLVM_INTEL_JITEVENTS_INCDIR} )
 
 set(LLVM_LINK_COMPONENTS
-  asmparser
-  bitreader
-  DebugInfoDWARF
+  asmparserV1
+  bitreaderV1
+  DebugInfoDWARFV1
   inteljitevents
   interpreter
-  irreader
+  irreaderV1
   mcjit
   nativecodegen
-  object
+  objectV1
   selectiondag
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   ExecutionEngine
   RuntimeDyld
-  Core
+  CoreV1
   )
 
 add_llvm_tool(llvm-jitlistener

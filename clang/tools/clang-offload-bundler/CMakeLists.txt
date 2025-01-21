@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  Object
-  Support
-  TargetParser
+  ObjectV1
+  SupportV1
+  TargetParserV1
   )
 
 add_clang_tool(clang-offload-bundler

@@ -16,25 +16,25 @@ add_llvm_component_library(LLVMLTO
   LINK_COMPONENTS
   AggressiveInstCombine
   Analysis
-  BinaryFormat
-  BitReader
+  BinaryFormatV1
+  BitReaderV1
   BitWriter
   CodeGen
-  CodeGenTypes
-  Core
+  CodeGenTypesV1
+  CoreV1
   Extensions
   IPO
   InstCombine
   Instrumentation
   Linker
-  MC
+  MCV1
   ObjCARC
-  Object
+  ObjectV1
   Passes
-  Remarks
+  RemarksV1
   Scalar
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   )

@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  AsmParser
-  core
+  AsmParserV1
+  coreV1
   linker
   )
 

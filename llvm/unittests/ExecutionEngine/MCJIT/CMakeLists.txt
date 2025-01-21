@@ -1,15 +1,15 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
-  Core
+  CoreV1
   ExecutionEngine
-  MC
+  MCV1
   MCJIT
   Passes
   RuntimeDyld
   ScalarOpts
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   nativecodegen
   )
 

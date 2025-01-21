@@ -99,7 +99,7 @@ add_pdb_impl_folder(Native
 list(APPEND LIBPDB_ADDITIONAL_HEADER_DIRS "${LLVM_MAIN_INCLUDE_DIR}/llvm/DebugInfo/PDB/Native")
 list(APPEND LIBPDB_ADDITIONAL_HEADER_DIRS "${LLVM_MAIN_INCLUDE_DIR}/llvm/DebugInfo/PDB")
 
-add_llvm_component_library(LLVMDebugInfoPDB
+add_llvm_component_library(LLVMDebugInfoPDBV1
   GenericError.cpp
   IPDBSourceFile.cpp
   PDB.cpp
@@ -146,11 +146,11 @@ add_llvm_component_library(LLVMDebugInfoPDB
   ${LIBPDB_ADDITIONAL_HEADER_DIRS}
 
   LINK_COMPONENTS
-  BinaryFormat
-  Object
-  Support
-  DebugInfoCodeView
-  DebugInfoMSF
+  BinaryFormatV1
+  ObjectV1
+  Supportv1
+  DebugInfoCodeViewV1
+  DebugInfoMSFV1
   )
 
-target_link_libraries(LLVMDebugInfoPDB INTERFACE "${LIBPDB_ADDITIONAL_LIBRARIES}")
+target_link_libraries(LLVMDebugInfoPDBV1 INTERFACE "${LIBPDB_ADDITIONAL_LIBRARIES}")

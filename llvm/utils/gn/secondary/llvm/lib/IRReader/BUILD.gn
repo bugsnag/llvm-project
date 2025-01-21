@@ -1,5 +1,5 @@
 static_library("IRReader") {
-  output_name = "LLVMIRReader"
+  output_name = "LLVMIRReaderV1"
   deps = [
     "//llvm/lib/AsmParser",
     "//llvm/lib/Bitcode/Reader",

@@ -1,5 +1,5 @@
 static_library("CodeView") {
-  output_name = "LLVMDebugInfoCodeView"
+  output_name = "LLVMDebugInfoCodeViewV1"
   deps = [
     "//llvm/lib/DebugInfo/MSF",
     "//llvm/lib/Support",

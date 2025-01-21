@@ -30,11 +30,11 @@ add_llvm_component_library(LLVMInstrumentation
 
   LINK_COMPONENTS
   Analysis
-  Core
-  Demangle
-  MC
-  Support
-  TargetParser
+  CoreV1
+  DemangleV1
+  MCV1
+  SupportV1
+  TargetParserV1
   TransformUtils
   ProfileData
   )

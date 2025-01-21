@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  MC
+  MCV1
   MCA
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 set(mca_root ${LLVM_MAIN_SRC_DIR}/tools/llvm-mca)

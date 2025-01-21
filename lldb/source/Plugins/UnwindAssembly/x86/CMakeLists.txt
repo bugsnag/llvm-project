@@ -8,7 +8,7 @@ add_lldb_library(lldbPluginUnwindAssemblyX86 PLUGIN
     lldbTarget
     lldbUtility
   LINK_COMPONENTS
-    Support
-    MC
+    SupportV1
+    MCV1
     MCDisassembler
   )

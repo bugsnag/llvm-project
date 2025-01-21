@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  Core
-  Object
+  CoreV1
+  ObjectV1
   ProfileData
-  Support
+  SupportV1
   )
 
 add_llvm_tool(llvm-profdata

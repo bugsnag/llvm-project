@@ -8,9 +8,9 @@ add_llvm_component_library(LLVMInterpreter
 
   LINK_COMPONENTS
   CodeGen
-  Core
+  CoreV1
   ExecutionEngine
-  Support
+  SupportV1
   )
 
 if( LLVM_ENABLE_FFI )

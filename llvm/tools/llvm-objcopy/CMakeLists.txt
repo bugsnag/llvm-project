@@ -1,11 +1,11 @@
 set(LLVM_LINK_COMPONENTS
-  Object
+  ObjectV1
   ObjCopy
-  Option
-  Support
-  TargetParser
-  MC
-  BinaryFormat
+  OptionV1
+  SupportV1
+  TargetParserV1
+  MCV1
+  BinaryFormatV1
   )
 
 set(LLVM_TARGET_DEFINITIONS ObjcopyOpts.td)

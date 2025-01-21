@@ -99,14 +99,14 @@ add_llvm_target(AArch64CodeGen
   CFGuard
   CodeGen
   CodeGenTypes
-  Core
+  CoreV1
   GlobalISel
-  MC
+  MCV1
   Scalar
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
 
   ADD_TO_COMPONENT

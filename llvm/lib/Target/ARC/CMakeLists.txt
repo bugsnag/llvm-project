@@ -33,13 +33,13 @@ add_llvm_target(ARCCodeGen
   Analysis
   AsmPrinter
   CodeGen
-  CodeGenTypes
-  Core
-  MC
+  CodeGenTypesV1
+  CoreV1
+  MCV1
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
 
   ADD_TO_COMPONENT

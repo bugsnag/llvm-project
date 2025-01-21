@@ -15,7 +15,7 @@ add_flang_library(HLFIRDialect
   ${dialect_libs}
 
   LINK_COMPONENTS
-  AsmParser
+  AsmParserV1
   AsmPrinter
-  Remarks
+  RemarksV1
 )

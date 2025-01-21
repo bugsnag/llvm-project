@@ -4,9 +4,9 @@ add_llvm_component_library(LLVMInterfaceStub
   IFSStub.cpp
 
   LINK_COMPONENTS
-  BinaryFormat
-  MC
-  Object
-  Support
-  TargetParser
+  BinaryFormatV1
+  MCV1
+  ObjectV1
+  SupportV1
+  TargetParserV1
 )

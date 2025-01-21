@@ -8,6 +8,6 @@ add_lldb_library(lldbPluginABIAArch64 PLUGIN
     lldbSymbol
     lldbTarget
   LINK_COMPONENTS
-    Support
-    TargetParser
+    SupportV1
+    TargetParserV1
   )

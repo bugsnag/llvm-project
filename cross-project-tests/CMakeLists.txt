@@ -9,7 +9,7 @@ find_package(Python3 COMPONENTS Interpreter)
 add_llvm_executable(check-gdb-llvm-support
         debuginfo-tests/llvm-prettyprinters/gdb/llvm-support.cpp
 )
-target_link_libraries(check-gdb-llvm-support PRIVATE LLVMSupport)
+target_link_libraries(check-gdb-llvm-support PRIVATE LLVMSupportV1)
 
 set(CROSS_PROJECT_TESTS_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(CROSS_PROJECT_TESTS_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR})

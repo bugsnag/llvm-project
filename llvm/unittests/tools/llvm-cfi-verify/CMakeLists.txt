@@ -3,12 +3,12 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  MC
-  MCParser
-  Object
-  Support
-  Symbolize
-  TargetParser
+  MCV1
+  MCParserV1
+  ObjectV1
+  SupportV1
+  SymbolizeV1
+  TargetParserV1
   )
 
 add_llvm_unittest(CFIVerifyTests

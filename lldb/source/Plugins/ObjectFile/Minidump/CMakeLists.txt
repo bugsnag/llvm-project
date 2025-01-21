@@ -10,5 +10,5 @@ add_lldb_library(lldbPluginObjectFileMinidump PLUGIN
     lldbUtility
     lldbPluginProcessUtility
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

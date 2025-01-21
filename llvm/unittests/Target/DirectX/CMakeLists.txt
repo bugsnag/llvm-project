@@ -4,11 +4,11 @@ include_directories(
   )
 
 set(LLVM_LINK_COMPONENTS
-  AsmParser
-  Core
+  AsmParserV1
+  CoreV1
   DirectXCodeGen
   DirectXPointerTypeAnalysis
-  Support
+  SupportV1
   )
 
 add_llvm_target_unittest(DirectXTests

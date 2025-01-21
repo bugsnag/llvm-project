@@ -1,5 +1,5 @@
 set(LLVM_LINK_COMPONENTS
-  BitstreamReader
+  BitstreamReaderV1
   )
 
 add_llvm_unittest(BitstreamTests

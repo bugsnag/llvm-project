@@ -20,8 +20,8 @@ add_lldb_library(lldbPluginSymbolFileNativePDB
     clangAST
     clangLex
   LINK_COMPONENTS
-    DebugInfoCodeView
-    DebugInfoPDB
-    Support
-    TargetParser
+    DebugInfoCodeViewV1
+    DebugInfoPDBV1
+    SupportV1
+    TargetParserV1
   )

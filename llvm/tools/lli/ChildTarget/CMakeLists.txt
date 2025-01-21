@@ -2,7 +2,7 @@ set(LLVM_LINK_COMPONENTS
   OrcJIT
   OrcShared
   OrcTargetProcess
-  Support
+  SupportV1
   )
 
 add_llvm_utility(lli-child-target

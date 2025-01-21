@@ -7,7 +7,7 @@ if( NOT LLVM_REQUIRES_RTTI )
 endif()
 
 if(WIN32 OR CYGWIN)
-  set(LLVM_LINK_COMPONENTS Core Support)
+  set(LLVM_LINK_COMPONENTS CoreV1 SupportV1)
 endif()
 
 add_llvm_library( LLVMHello MODULE BUILDTREE_ONLY

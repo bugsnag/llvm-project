@@ -2,7 +2,7 @@
 add_subdirectory(include)
 
 set(LLVM_LINK_COMPONENTS
-  Support
+  SupportV1
   )
 
 add_toy_chapter(toyc-ch2

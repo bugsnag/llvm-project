@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  Core
-  Support
+  CoreV1
+  SupportV1
   Analysis
-  IRReader)
+  IRReaderV1)
 
 add_llvm_tool(llvm-sim
   llvm-sim.cpp

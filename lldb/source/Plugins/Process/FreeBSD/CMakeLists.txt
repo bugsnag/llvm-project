@@ -16,5 +16,5 @@ add_lldb_library(lldbPluginProcessFreeBSD
     lldbPluginProcessPOSIX
     lldbPluginProcessUtility
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

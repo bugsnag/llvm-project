@@ -8,7 +8,7 @@ if (HAS_WERROR_GLOBAL_CTORS AND NOT LLVM_HAS_NOGLOBAL_CTOR_MUTEX)
   SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror=global-constructors")
 endif()
 
-add_llvm_component_library(LLVMTargetParser
+add_llvm_component_library(LLVMTargetParserV1
   AArch64TargetParser.cpp
   ARMTargetParserCommon.cpp
   ARMTargetParser.cpp
@@ -25,7 +25,7 @@ add_llvm_component_library(LLVMTargetParser
   Windows
 
   LINK_COMPONENTS
-  Support
+  SupportV1
 
   DEPENDS
   RISCVTargetParserTableGen

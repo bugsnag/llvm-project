@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  BitReader
-  BitstreamReader
-  Support
-  TargetParser
+  BitReaderV1
+  BitstreamReaderV1
+  SupportV1
+  TargetParserV1
   )
 
 

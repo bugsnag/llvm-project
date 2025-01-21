@@ -1,19 +1,19 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
   Analysis
-  AsmParser
+  AsmParserV1
   AsmPrinter
   CodeGen
-  CodeGenTypes
-  Core
+  CodeGenTypesV1
+  CoreV1
   FileCheck
-  MC
+  MCV1
   MIRParser
   Passes
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   )
 
 add_llvm_unittest(CodeGenTests

@@ -6,6 +6,6 @@ add_lldb_library(lldbPluginABISystemZ PLUGIN
     lldbSymbol
     lldbTarget
   LINK_COMPONENTS
-    Support
-    TargetParser
+    SupportV1
+    TargetParserV1
   )

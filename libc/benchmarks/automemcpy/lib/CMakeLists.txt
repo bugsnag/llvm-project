@@ -17,7 +17,7 @@ add_custom_command(
 )
 
 add_library(automemcpy_implementations "${Implementations}")
-target_link_libraries(automemcpy_implementations PUBLIC LLVMSupport libc-memory-benchmark)
+target_link_libraries(automemcpy_implementations PUBLIC LLVMSupportV1 libc-memory-benchmark)
 target_include_directories(automemcpy_implementations PRIVATE ${LIBC_SOURCE_DIR} ${LIBC_AUTOMEMCPY_INCLUDE_DIR})
 target_compile_options(automemcpy_implementations PRIVATE ${LIBC_COMPILE_OPTIONS_NATIVE} "SHELL:-mllvm -combiner-global-alias-analysis" -fno-builtin)
 llvm_update_compile_flags(automemcpy_implementations)
@@ -27,7 +27,7 @@ target_link_libraries(automemcpy PRIVATE libc-memory-benchmark benchmark_main au
 llvm_update_compile_flags(automemcpy)
 
 add_library(automemcpy_result_analyzer_lib EXCLUDE_FROM_ALL ResultAnalyzer.cpp)
-target_link_libraries(automemcpy_result_analyzer_lib PUBLIC LLVMSupport)
+target_link_libraries(automemcpy_result_analyzer_lib PUBLIC LLVMSupportV1)
 target_include_directories(automemcpy_result_analyzer_lib PUBLIC ${LIBC_AUTOMEMCPY_INCLUDE_DIR})
 llvm_update_compile_flags(automemcpy_result_analyzer_lib)
 

@@ -1,5 +1,5 @@
 static_library("Object") {
-  output_name = "LLVMObject"
+  output_name = "LLVMObjectV1"
   deps = [
     "//llvm/include/llvm/Config:llvm-config",
     "//llvm/include/llvm/Support:write_vcsrevision",

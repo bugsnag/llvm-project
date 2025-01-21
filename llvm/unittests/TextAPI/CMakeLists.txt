@@ -1,5 +1,5 @@
 set(LLVM_LINK_COMPONENTS
-  TextAPI
+  TextAPIV1
   )
 
 add_llvm_unittest(TextAPITests

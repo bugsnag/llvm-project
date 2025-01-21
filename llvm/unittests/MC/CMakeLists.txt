@@ -6,11 +6,11 @@ endforeach()
 
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  MC
+  MCV1
   MCDisassembler
-  Object
-  Support
-  TargetParser
+  ObjectV1
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_unittest(MCTests

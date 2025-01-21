@@ -2,8 +2,8 @@ add_llvm_component_library(LLVMARMInfo
   ARMTargetInfo.cpp
 
   LINK_COMPONENTS
-  MC
-  Support
+  MCV1
+  SupportV1
 
   ADD_TO_COMPONENT
   ARM

@@ -1,11 +1,11 @@
 set(LLVM_LINK_COMPONENTS
-  DebugInfoDWARF
+  DebugInfoDWARFV1
   DWP
   ExecutionEngine
-  MC
-  Object
-  Support
-  TargetParser
+  MCV1
+  ObjectV1
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_library(LLVMBOLTRewrite

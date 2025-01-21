@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
   FileCheck
-  Support
+  SupportV1
 )
 
 add_llvm_unittest(FileCheckTests

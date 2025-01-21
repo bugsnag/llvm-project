@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMCore
+add_llvm_component_library(LLVMCoreV1
   AbstractCallSite.cpp
   AsmWriter.cpp
   Assumptions.cpp
@@ -77,9 +77,9 @@ add_llvm_component_library(LLVMCore
   intrinsics_gen
 
   LINK_COMPONENTS
-  BinaryFormat
-  Demangle
-  Remarks
-  Support
-  TargetParser
+  BinaryFormatV1
+  DemangleV1
+  RemarksV1
+  SupportV1
+  TargetParserV1
   )

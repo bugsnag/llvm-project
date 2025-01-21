@@ -2,12 +2,12 @@ add_llvm_component_library(LLVMPerfJITEvents
   PerfJITEventListener.cpp
 
   LINK_COMPONENTS
-  CodeGen
-  Core
-  DebugInfoDWARF
+  CodeGenV1
+  CoreV1
+  DebugInfoDWARFV1
   ExecutionEngine
-  Object
-  Support
+  ObjectV1
+  SupportV1
   )
 
 add_dependencies(LLVMPerfJITEvents LLVMCodeGen)

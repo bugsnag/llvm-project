@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  BitReader
-  Core
-  Support
+  BitReaderV1
+  CoreV1
+  SupportV1
   )
 
 add_llvm_tool(llvm-dis

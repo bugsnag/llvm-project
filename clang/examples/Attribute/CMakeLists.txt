@@ -6,6 +6,6 @@ if(WIN32 OR CYGWIN)
     clangBasic
     clangFrontend
     clangLex
-    LLVMSupport
+    LLVMSupportV1
     )
 endif()

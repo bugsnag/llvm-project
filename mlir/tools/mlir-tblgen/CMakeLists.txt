@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  CodeGenTypes
-  Demangle
-  Support
-  TableGen
+  CodeGenTypesV1
+  DemangleV1
+  SupportV1
+  TableGenV1
 )
 
 add_tablegen(mlir-tblgen MLIR

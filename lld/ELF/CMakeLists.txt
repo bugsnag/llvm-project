@@ -60,18 +60,18 @@ add_lld_library(lldELF
 
   LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  BinaryFormat
+  BinaryFormatV1
   BitWriter
-  Core
-  DebugInfoDWARF
-  Demangle
+  CoreV1
+  DebugInfoDWARFV1
+  DemangleV1
   LTO
-  MC
-  Object
-  Option
+  MCV1
+  ObjectV1
+  OptionV1
   Passes
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
 
   LINK_LIBS
   lldCommon

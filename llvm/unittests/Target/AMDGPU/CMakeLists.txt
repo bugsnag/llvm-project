@@ -9,11 +9,11 @@ set(LLVM_LINK_COMPONENTS
   AMDGPUInfo
   AMDGPUUtils
   CodeGen
-  CodeGenTypes
-  Core
-  MC
-  Support
-  TargetParser
+  CodeGenTypesV1
+  CoreV1
+  MCV1
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_target_unittest(AMDGPUTests

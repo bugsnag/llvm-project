@@ -1,10 +1,10 @@
 set( LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  Core
+  CoreV1
   LineEditor
-  Option
+  OptionV1
   OrcJIT
-  Support
+  SupportV1
   )
 
 add_clang_tool(clang-repl

@@ -16,12 +16,12 @@ add_llvm_component_library(LLVMDebugInfoGSYM
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/DebugInfo
 
   DEPENDS
-  LLVMMC
+  LLVMMCV1
 
   LINK_COMPONENTS
-  MC
-  Object
-  Support
-  TargetParser
-  DebugInfoDWARF
+  MCV1
+  ObjectV1
+  SupportV1
+  TargetParserV1
+  DebugInfoDWARFV1
   )

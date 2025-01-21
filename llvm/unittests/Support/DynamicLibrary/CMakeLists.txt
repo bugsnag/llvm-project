@@ -1,7 +1,7 @@
 # Needed by LLVM's CMake checks because this file defines multiple targets.
 set(LLVM_OPTIONAL_SOURCES ExportedFuncs.cpp PipSqueak.cpp)
 
-set(LLVM_LINK_COMPONENTS Support)
+set(LLVM_LINK_COMPONENTS SupportV1)
 
 add_library(DynamicLibraryLib STATIC
   ExportedFuncs.cpp

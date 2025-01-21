@@ -1,5 +1,5 @@
 set(LLVM_LINK_COMPONENTS
-  Support
+  SupportV1
   )
 
 add_clang_unittest(RewriteTests

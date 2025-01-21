@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  Option
+  OptionV1
   FrontendOpenMP
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_subdirectory(Core)

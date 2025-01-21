@@ -2,14 +2,14 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsAsmParsers
   AllTargetsDescs
   AllTargetsInfos
-  BinaryFormat
-  Core
-  Demangle
-  Object
-  Option
-  Support
-  TargetParser
-  TextAPI
+  BinaryFormatV1
+  CoreV1
+  DemangleV1
+  ObjectV1
+  OptionV1
+  SupportV1
+  TargetParserV1
+  TextAPIV1
   )
 
 set(LLVM_TARGET_DEFINITIONS Opts.td)

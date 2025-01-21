@@ -5,11 +5,11 @@ add_llvm_component_library(LLVMARMAsmParser
   ARMDesc
   ARMInfo
   ARMUtils
-  CodeGenTypes
-  MC
-  MCParser
-  Support
-  TargetParser
+  CodeGenTypesV1
+  MCV1
+  MCParserV1
+  SupportV1
+  TargetParserV1
 
   ADD_TO_COMPONENT
   ARM

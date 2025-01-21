@@ -4,10 +4,10 @@ add_llvm_component_library(LLVMCSKYAsmParser
   LINK_COMPONENTS
   CSKYDesc
   CSKYInfo
-  MC
-  MCParser
-  Support
-  TargetParser
+  MCV1
+  MCParserV1
+  SupportV1
+  TargetParserV1
 
   ADD_TO_COMPONENT
   CSKY

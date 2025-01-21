@@ -1,5 +1,5 @@
 set(LLVM_LINK_COMPONENTS
-  DebugInfoCodeView
+  DebugInfoCodeViewV1
   )
 
 add_llvm_unittest(DebugInfoCodeViewTests

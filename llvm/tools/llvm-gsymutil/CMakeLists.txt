@@ -1,12 +1,12 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
-  DebugInfoDWARF
+  DebugInfoDWARFV1
   DebugInfoGSYM
-  MC
-  Object
-  Option
-  Support
-  TargetParser
+  MCV1
+  ObjectV1
+  OptionV1
+  SupportV1
+  TargetParserV1
   )
 
 set(LLVM_TARGET_DEFINITIONS Opts.td)

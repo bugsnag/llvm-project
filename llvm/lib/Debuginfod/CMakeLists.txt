@@ -15,7 +15,7 @@ endif()
 
 # Note: This isn't a component, since that could potentially add a libcurl
 # dependency to libLLVM.
-add_llvm_library(LLVMDebuginfod
+add_llvm_library(LLVMDebuginfodV1
   BuildIDFetcher.cpp
   Debuginfod.cpp
   HTTPClient.cpp
@@ -28,9 +28,9 @@ add_llvm_library(LLVMDebuginfod
   ${imported_libs}
 
   LINK_COMPONENTS
-  Support
-  Symbolize
-  DebugInfoDWARF
-  BinaryFormat
-  Object
+  SupportV1
+  SymbolizeV1
+  DebugInfoDWARFV1
+  BinaryFormatV1
+  ObjectV1
   )

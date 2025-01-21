@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
-  AsmParser
+  AsmParserV1
   BitWriter
-  Core
-  Support
+  CoreV1
+  SupportV1
   TransformUtils
   Passes
   Vectorize

@@ -4,6 +4,6 @@ add_llvm_utility(KillTheDoctor
 
 target_link_libraries(KillTheDoctor
   PRIVATE
-  LLVMSupport
+  LLVMSupportV1
   psapi
   )

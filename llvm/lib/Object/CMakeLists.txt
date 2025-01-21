@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMObject
+add_llvm_component_library(LLVMObjectV1
   Archive.cpp
   ArchiveWriter.cpp
   Binary.cpp
@@ -42,13 +42,13 @@ add_llvm_component_library(LLVMObject
   llvm_vcsrevision_h
 
   LINK_COMPONENTS
-  BitReader
-  Core
-  MC
-  IRReader
-  BinaryFormat
-  MCParser
-  Support
-  TargetParser
-  TextAPI
+  BitReaderV1
+  CoreV1
+  MCV1
+  IRReaderV1
+  BinaryFormatV1
+  MCParserV1
+  SupportV1
+  TargetParserV1
+  TextAPIV1
   )

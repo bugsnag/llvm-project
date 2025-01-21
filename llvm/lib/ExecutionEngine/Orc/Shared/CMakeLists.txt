@@ -14,5 +14,5 @@ add_llvm_component_library(LLVMOrcShared
   ${LLVM_PTHREAD_LIB}
 
   LINK_COMPONENTS
-  Support
+  SupportV1
   )

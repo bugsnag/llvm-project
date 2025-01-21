@@ -1,14 +1,14 @@
 set(LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
   AsmPrinter
-  BinaryFormat
-  CodeGenTypes
-  DebugInfoDWARF
-  MC
-  Object
+  BinaryFormatV1
+  CodeGenTypesV1
+  DebugInfoDWARFV1
+  MCV1
+  ObjectV1
   ObjectYAML
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_unittest(DebugInfoDWARFTests

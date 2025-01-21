@@ -50,5 +50,5 @@ add_lldb_library(lldbSymbol NO_PLUGIN_DEPENDENCIES
     lldbUtility
 
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

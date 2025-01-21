@@ -2,18 +2,18 @@ set( LLVM_LINK_COMPONENTS
   ${LLVM_TARGETS_TO_BUILD}
   Analysis
   CodeGen
-  Core
+  CoreV1
   IPO
   AggressiveInstCombine
   InstCombine
   Instrumentation
-  MC
-  MCParser
+  MCV1
+  MCParserV1
   ObjCARCOpts
-  Option
+  OptionV1
   ScalarOpts
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   TransformUtils
   Vectorize
   )

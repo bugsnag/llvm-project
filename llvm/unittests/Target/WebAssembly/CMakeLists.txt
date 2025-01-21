@@ -5,11 +5,11 @@ include_directories(
 
 set(LLVM_LINK_COMPONENTS
   CodeGen
-  CodeGenTypes
-  Core
-  MC
+  CodeGenTypesV1
+  CoreV1
+  MCV1
   MIRParser
-  TargetParser
+  TargetParserV1
   WebAssemblyCodeGen
   WebAssemblyDesc
   WebAssemblyInfo

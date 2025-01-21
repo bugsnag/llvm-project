@@ -9,6 +9,6 @@ add_llvm_component_library(LLVMIRPrinter
 
   LINK_COMPONENTS
   Analysis
-  Core
-  Support
+  CoreV1
+  SupportV1
   )

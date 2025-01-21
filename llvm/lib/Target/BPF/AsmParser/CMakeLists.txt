@@ -2,11 +2,11 @@ add_llvm_component_library(LLVMBPFAsmParser
   BPFAsmParser.cpp
 
   LINK_COMPONENTS
-  MC
-  MCParser
+  MCV1
+  MCParserV1
   BPFDesc
   BPFInfo
-  Support
+  SupportV1
 
   ADD_TO_COMPONENT
   BPF

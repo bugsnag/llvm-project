@@ -15,5 +15,5 @@ add_lldb_library(lldbPluginGNUstepObjCRuntime PLUGIN
   CLANG_LIBS
     clangAST
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

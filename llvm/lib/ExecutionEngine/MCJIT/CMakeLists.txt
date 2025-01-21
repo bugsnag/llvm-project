@@ -5,10 +5,10 @@ add_llvm_component_library(LLVMMCJIT
   intrinsics_gen
 
   LINK_COMPONENTS
-  Core
+  CoreV1
   ExecutionEngine
-  Object
+  ObjectV1
   RuntimeDyld
-  Support
-  Target
+  SupportV1
+  TargetV1
   )

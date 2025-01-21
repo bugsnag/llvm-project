@@ -10,10 +10,10 @@ add_llvm_component_library(LLVMDWARFLinkerParallel
 
   LINK_COMPONENTS
   AsmPrinter
-  BinaryFormat
-  CodeGen
-  DebugInfoDWARF
-  MC
-  Object
-  Support
+  BinaryFormatV1
+  CodeGenV1
+  DebugInfoDWARFV1
+  MCV1
+  ObjectV1
+  SupportV1
   )

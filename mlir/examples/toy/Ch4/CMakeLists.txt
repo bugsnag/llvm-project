@@ -3,7 +3,7 @@ include_directories(include)
 add_subdirectory(include)
 
 set(LLVM_LINK_COMPONENTS
-  Support
+  SupportV1
   )
 
 set(LLVM_TARGET_DEFINITIONS mlir/ToyCombine.td)

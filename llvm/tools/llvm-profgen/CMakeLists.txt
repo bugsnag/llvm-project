@@ -3,16 +3,16 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  DebugInfoDWARF
-  Core
-  MC
+  DebugInfoDWARFV1
+  CoreV1
+  MCV1
   IPO
   MCDisassembler
-  Object
+  ObjectV1
   ProfileData
-  Support
-  Symbolize
-  TargetParser
+  SupportV1
+  SymbolizeV1
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-profgen

@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
   AllTargetsInfos
-  MC
-  Object
-  Support
+  MCV1
+  ObjectV1
+  SupportV1
   )
 
 add_llvm_tool(llvm-cxxdump

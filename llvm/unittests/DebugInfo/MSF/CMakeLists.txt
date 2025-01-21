@@ -1,5 +1,5 @@
 set(LLVM_LINK_COMPONENTS
-  DebugInfoMSF
+  DebugInfoMSFV1
   )
 
 add_llvm_unittest(DebugInfoMSFTests

@@ -1,11 +1,11 @@
 set(LLVM_LINK_COMPONENTS
-  BinaryFormat
-  MC
-  Object
-  Option
+  BinaryFormatV1
+  MCV1
+  ObjectV1
+  OptionV1
   ProfileData
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   WindowsDriver
   )
 

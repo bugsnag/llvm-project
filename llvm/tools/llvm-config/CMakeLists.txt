@@ -1,6 +1,6 @@
 set(LLVM_LINK_COMPONENTS
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 set(BUILDVARIABLES_SRCPATH ${CMAKE_CURRENT_SOURCE_DIR}/BuildVariables.inc.in)
@@ -18,7 +18,7 @@ add_llvm_tool(llvm-config
   )
 
 # Compute the substitution values for various items.
-get_property(SUPPORT_SYSTEM_LIBS TARGET LLVMSupport PROPERTY LLVM_SYSTEM_LIBS)
+get_property(SUPPORT_SYSTEM_LIBS TARGET LLVMSupportV1 PROPERTY LLVM_SYSTEM_LIBS)
 get_property(WINDOWSMANIFEST_SYSTEM_LIBS TARGET LLVMWindowsManifest PROPERTY LLVM_SYSTEM_LIBS)
 
 foreach(l ${SUPPORT_SYSTEM_LIBS} ${WINDOWSMANIFEST_SYSTEM_LIBS})

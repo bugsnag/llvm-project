@@ -11,6 +11,6 @@ target_link_libraries(ClangdXpcTests
   PRIVATE
   clangdXpcJsonConversions
   clangDaemon
-  LLVMSupport
+  LLVMSupportV1
   LLVMTestingSupport
   )

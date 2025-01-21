@@ -2,12 +2,12 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsCodeGens
   AllTargetsDescs
   AllTargetsInfos
-  DebugInfoDWARF
+  DebugInfoDWARFV1
   DWP
-  MC
-  Object
-  Support
-  TargetParser
+  MCV1
+  ObjectV1
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-dwp

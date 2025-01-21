@@ -5,12 +5,12 @@ include_directories(
 
 set(LLVM_LINK_COMPONENTS
   CodeGen
-  CodeGenTypes
-  Core
+  CodeGenTypesV1
+  CoreV1
   Exegesis
-  MC
-  Support
-  TargetParser
+  MCV1
+  SupportV1
+  TargetParserV1
   X86
   )
 

@@ -1,9 +1,9 @@
 set(LLVM_LINK_COMPONENTS
-  AsmParser
-  BitReader
+  AsmParserV1
+  BitReaderV1
   BitWriter
-  Core
-  Support
+  CoreV1
+  SupportV1
   )
 
 add_llvm_unittest(BitcodeTests

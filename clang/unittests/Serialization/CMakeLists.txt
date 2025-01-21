@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  BitReader
-  BitstreamReader
-  Support
+  BitReaderV1
+  BitstreamReaderV1
+  SupportV1
   )
 
 add_clang_unittest(SerializationTests

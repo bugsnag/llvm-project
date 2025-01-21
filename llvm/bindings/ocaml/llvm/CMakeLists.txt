@@ -2,7 +2,7 @@ add_ocaml_library(llvm
   OCAML llvm
   C     llvm_ocaml
   CFLAGS   "-I${CMAKE_CURRENT_SOURCE_DIR}/"
-  LLVM  Core Support)
+  LLVM  Core SupportV1)
 
 configure_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/META.llvm.in"

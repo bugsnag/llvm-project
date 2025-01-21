@@ -9,5 +9,5 @@ add_lldb_unittest(Arm64InstEmulationTests
     lldbPluginInstructionARM64
     lldbPluginProcessUtility
   LINK_COMPONENTS
-    Support
+    SupportV1
     ${LLVM_TARGETS_TO_BUILD})

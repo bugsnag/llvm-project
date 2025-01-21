@@ -1,20 +1,20 @@
 set(LLVM_LINK_COMPONENTS
   Analysis
   CodeGen
-  Core
+  CoreV1
   ExecutionEngine
   IPO
   IRPrinter
-  IRReader
-  MC
+  IRReaderV1
+  MCV1
   MCJIT
-  Object
+  ObjectV1
   Passes
   RuntimeDyld
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   native
 )

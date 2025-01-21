@@ -6,16 +6,16 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsCodeGens
   AllTargetsDescs
   AllTargetsInfos
-  CodeGenTypes
+  CodeGenTypesV1
   DWARFLinker
-  DebugInfoDWARF
-  MC
+  DebugInfoDWARFV1
+  MCV1
   ObjCopy
-  Object
-  Option
-  Support
-  Target
-  TargetParser
+  ObjectV1
+  OptionV1
+  SupportV1
+  TargetV1
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-dwarfutil

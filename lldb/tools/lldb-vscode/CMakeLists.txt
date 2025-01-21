@@ -18,7 +18,7 @@ endif()
 
 # We need to include the llvm components we depend on manually, as liblldb does
 # not re-export those.
-set(LLVM_LINK_COMPONENTS Support)
+set(LLVM_LINK_COMPONENTS SupportV1)
 set(LLVM_TARGET_DEFINITIONS Options.td)
 tablegen(LLVM Options.inc -gen-opt-parser-defs)
 add_public_tablegen_target(LLDBVSCodeOptionsTableGen)

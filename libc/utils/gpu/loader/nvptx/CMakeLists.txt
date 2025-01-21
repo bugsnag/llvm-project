@@ -10,5 +10,5 @@ target_link_libraries(nvptx_loader
   gpu_loader
   CUDA::cuda_driver
   LLVMObject
-  LLVMSupport
+  LLVMSupportV1
 )

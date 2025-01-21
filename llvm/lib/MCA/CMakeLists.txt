@@ -28,6 +28,6 @@ add_llvm_component_library(LLVMMCA
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/MCA
 
   LINK_COMPONENTS
-  MC
-  Support
+  MCV1
+  SupportV1
   )

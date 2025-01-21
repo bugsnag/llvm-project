@@ -40,13 +40,13 @@ add_llvm_component_library(LLVMDebugInfoLogicalView
   ${LIBLV_ADDITIONAL_HEADER_DIRS}
 
   LINK_COMPONENTS
-  BinaryFormat
-  Demangle
-  Object
-  MC
-  Support
-  TargetParser
-  DebugInfoDWARF
-  DebugInfoCodeView
-  DebugInfoPDB
+  BinaryFormatV1
+  DemangleV1
+  ObjectV1
+  MCV1
+  SupportV1
+  TargetParserV1
+  DebugInfoDWARFV1
+  DebugInfoCodeViewV1
+  DebugInfoPDBV1
   )

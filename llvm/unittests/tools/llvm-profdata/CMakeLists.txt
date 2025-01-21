@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  Core
+  CoreV1
   ProfileData
-  Support
+  SupportV1
   )
 
 add_llvm_unittest(LLVMProfdataTests

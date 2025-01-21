@@ -10,9 +10,9 @@ add_llvm_component_library(LLVMCoverage
   intrinsics_gen
 
   LINK_COMPONENTS
-  Core
-  Object
+  CoreV1
+  ObjectV1
   ProfileData
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )

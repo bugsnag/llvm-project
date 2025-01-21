@@ -1,4 +1,4 @@
-set(LLVM_LINK_COMPONENTS Support)
+set(LLVM_LINK_COMPONENTS SupportV1)
 list(REMOVE_ITEM LLVM_COMMON_DEPENDS clang-tablegen-targets)
 
 add_clang_executable(clang-pseudo-gen

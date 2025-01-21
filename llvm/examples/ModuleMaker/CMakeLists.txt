@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
   BitWriter
-  Core
-  Support
+  CoreV1
+  SupportV1
   )
 
 add_llvm_example(ModuleMaker

@@ -1,10 +1,10 @@
 set(LLVM_LINK_COMPONENTS
-  BinaryFormat
-  Core
-  Object
-  Support
-  TargetParser
-  TextAPI
+  BinaryFormatV1
+  CoreV1
+  ObjectV1
+  SupportV1
+  TargetParserV1
+  TextAPIV1
   ${LLVM_TARGETS_TO_BUILD}
   )
 

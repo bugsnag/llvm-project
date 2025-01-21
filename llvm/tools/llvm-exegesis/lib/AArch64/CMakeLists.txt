@@ -6,10 +6,10 @@ include_directories(
 set(LLVM_LINK_COMPONENTS
   AArch64
   CodeGenTypes
-  Core
+  CoreV1
   Exegesis
-  MC
-  Support
+  MCV1
+  SupportV1
   )
 
 add_llvm_library(LLVMExegesisAArch64

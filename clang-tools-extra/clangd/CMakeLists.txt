@@ -40,11 +40,11 @@ configure_file(
 )
 
 set(LLVM_LINK_COMPONENTS
-  Support
+  SupportV1
   AllTargetsInfos
   FrontendOpenMP
-  Option
-  TargetParser
+  OptionV1
+  TargetParserV1
   )
 
 set(COMPLETIONMODEL_SOURCES)

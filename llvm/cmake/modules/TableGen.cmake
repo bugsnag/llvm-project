@@ -141,7 +141,7 @@ macro(add_tablegen target project)
   cmake_parse_arguments(ADD_TABLEGEN "" "DESTINATION;EXPORT" "" ${ARGN})
 
   set(${target}_OLD_LLVM_LINK_COMPONENTS ${LLVM_LINK_COMPONENTS})
-  set(LLVM_LINK_COMPONENTS ${LLVM_LINK_COMPONENTS} TableGen)
+  set(LLVM_LINK_COMPONENTS ${LLVM_LINK_COMPONENTS} TableGenV1)
 
   add_llvm_executable(${target} DISABLE_LLVM_LINK_LLVM_DYLIB
     ${ADD_TABLEGEN_UNPARSED_ARGUMENTS})

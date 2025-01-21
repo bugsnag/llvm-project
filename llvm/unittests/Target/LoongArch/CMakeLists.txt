@@ -5,17 +5,17 @@ include_directories(
 
 set(LLVM_LINK_COMPONENTS
   CodeGen
-  CodeGenTypes
-  Core
+  CodeGenTypesV1
+  CoreV1
   LoongArchCodeGen
   LoongArchDesc
   LoongArchInfo
-  MC
+  MCV1
   MIRParser
   SelectionDAG
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   )
 
 add_llvm_target_unittest(LoongArchTests

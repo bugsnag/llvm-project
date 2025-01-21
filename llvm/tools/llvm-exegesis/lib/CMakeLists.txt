@@ -22,20 +22,20 @@ endforeach()
 set(LLVM_LINK_COMPONENTS
   Analysis
   CodeGen
-  CodeGenTypes
-  Core
+  CodeGenTypesV1
+  CoreV1
   ExecutionEngine
   GlobalISel
-  MC
+  MCV1
   MCA
   MCDisassembler
   MCJIT
-  MCParser
-  Object
+  MCParserV1
+  ObjectV1
   ObjectYAML
   RuntimeDyld
-  Support
-  TargetParser
+  SupportV1
+  TargetParserV1
   )
 
 set(libs)

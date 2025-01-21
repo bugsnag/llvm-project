@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
-  BitReader
-  Remarks
-  Support
+  BitReaderV1
+  RemarksV1
+  SupportV1
   )
 
 add_llvm_unittest(RemarksTests

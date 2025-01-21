@@ -4,10 +4,10 @@ include_directories(
 
 set(LLVM_LINK_COMPONENTS
   SystemZ
-  MCParser
-  MC
-  Support
-  TargetParser
+  MCParserV1
+  MCV1
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_unittest(SystemZAsmLexerTests

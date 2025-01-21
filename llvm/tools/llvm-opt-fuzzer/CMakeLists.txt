@@ -5,23 +5,23 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsInfos
   Analysis
-  BitReader
+  BitReaderV1
   BitWriter
   CodeGen
-  Core
+  CoreV1
   Coroutines
   FuzzMutate
   FuzzerCLI
   IPO
   InstCombine
   Instrumentation
-  MC
+  MCV1
   ObjCARCOpts
   Passes
   ScalarOpts
-  Support
-  Target
-  TargetParser
+  SupportV1
+  TargetV1
+  TargetParserV1
   TransformUtils
   Vectorize
   )

@@ -2,16 +2,16 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDescs
   AllTargetsDisassemblers
   AllTargetsInfos
-  BinaryFormat
-  DebugInfoDWARF
-  Demangle
-  MC
+  BinaryFormatV1
+  DebugInfoDWARFV1
+  DemangleV1
+  MCV1
   MCDisassembler
-  Object
-  Option
-  Support
-  Symbolize
-  TargetParser
+  ObjectV1
+  OptionV1
+  SupportV1
+  SymbolizeV1
+  TargetParserV1
   )
 
 set(LLVM_TARGET_DEFINITIONS ObjdumpOpts.td)
@@ -36,7 +36,7 @@ add_llvm_tool(llvm-objdump
   OtoolOptsTableGen
   )
 
-target_link_libraries(llvm-objdump PRIVATE LLVMDebuginfod)
+target_link_libraries(llvm-objdump PRIVATE LLVMDebuginfodV1)
 
 if(LLVM_HAVE_LIBXAR)
   target_link_libraries(llvm-objdump PRIVATE ${XAR_LIB})

@@ -1,7 +1,7 @@
 set(LLVM_LINK_COMPONENTS
   FrontendOpenACC
   FrontendOpenMP
-  Support
+  SupportV1
   )
 
 add_flang_tool(f18-parse-demo

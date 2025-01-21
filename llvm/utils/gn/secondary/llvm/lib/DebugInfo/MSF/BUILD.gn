@@ -1,5 +1,5 @@
 static_library("MSF") {
-  output_name = "LLVMDebugInfoMSF"
+  output_name = "LLVMDebugInfoMSFV1"
   deps = [ "//llvm/lib/Support" ]
   sources = [
     "MSFBuilder.cpp",

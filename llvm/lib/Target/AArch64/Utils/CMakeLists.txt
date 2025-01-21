@@ -3,8 +3,8 @@ add_llvm_component_library(LLVMAArch64Utils
   AArch64SMEAttributes.cpp
 
   LINK_COMPONENTS
-  Support
-  Core
+  SupportV1
+  CoreV1
 
   ADD_TO_COMPONENT
   AArch64

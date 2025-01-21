@@ -6,5 +6,5 @@ add_lldb_library(lldbPluginObjectFilePDB PLUGIN
     lldbSymbol
     lldbUtility
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

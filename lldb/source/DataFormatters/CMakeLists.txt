@@ -24,5 +24,5 @@ add_lldb_library(lldbDataFormatters NO_PLUGIN_DEPENDENCIES
     lldbUtility
   
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

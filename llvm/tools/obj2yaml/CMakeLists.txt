@@ -1,10 +1,10 @@
 set(LLVM_LINK_COMPONENTS
-  BinaryFormat
-  DebugInfoCodeView
-  DebugInfoDWARF
-  Object
-  ObjectYAML
-  Support
+  BinaryFormatV1
+  DebugInfoCodeViewV1
+  DebugInfoDWARFV1
+  ObjectV1
+  ObjectYAMLV1
+  SupportV1
   )
 
 add_llvm_utility(obj2yaml

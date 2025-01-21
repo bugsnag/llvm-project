@@ -33,5 +33,5 @@ add_lldb_library(lldbPluginScriptInterpreterPython PLUGIN
     ${LLDB_LIBEDIT_LIBS}
 
   LINK_COMPONENTS
-    Support
+    SupportV1
   )

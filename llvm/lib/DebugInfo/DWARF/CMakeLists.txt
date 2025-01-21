@@ -1,4 +1,4 @@
-add_llvm_component_library(LLVMDebugInfoDWARF
+add_llvm_component_library(LLVMDebugInfoDWARFV1
   DWARFAbbreviationDeclaration.cpp
   DWARFAddressRange.cpp
   DWARFAcceleratorTable.cpp
@@ -34,8 +34,8 @@ add_llvm_component_library(LLVMDebugInfoDWARF
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/DebugInfo
 
   LINK_COMPONENTS
-  BinaryFormat
-  Object
-  Support
-  TargetParser
+  BinaryFormatV1
+  ObjectV1
+  SupportV1
+  TargetParserV1
   )

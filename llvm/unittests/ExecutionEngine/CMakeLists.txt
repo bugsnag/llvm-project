@@ -1,11 +1,11 @@
 set(LLVM_LINK_COMPONENTS
-  Core
+  CoreV1
   ExecutionEngine
   Interpreter
-  MC
+  MCV1
   OrcJIT
   RuntimeDyld
-  Support
+  SupportV1
   )
 
 add_llvm_unittest(ExecutionEngineTests

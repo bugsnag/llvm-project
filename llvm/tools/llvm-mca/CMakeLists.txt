@@ -7,10 +7,10 @@ set(LLVM_LINK_COMPONENTS
   AllTargetsDisassemblers
   AllTargetsInfos
   MCA
-  MC
-  MCParser
-  Support
-  TargetParser
+  MCV1
+  MCParserV1
+  SupportV1
+  TargetParserV1
   )
 
 add_llvm_tool(llvm-mca

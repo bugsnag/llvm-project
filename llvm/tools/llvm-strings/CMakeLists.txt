@@ -1,8 +1,8 @@
 set(LLVM_LINK_COMPONENTS
-  Core
-  Object
-  Option
-  Support
+  CoreV1
+  ObjectV1
+  OptionV1
+  SupportV1
   )
 
 set(LLVM_TARGET_DEFINITIONS Opts.td)

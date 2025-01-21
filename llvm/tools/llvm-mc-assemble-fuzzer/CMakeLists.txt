@@ -2,10 +2,10 @@ set(LLVM_LINK_COMPONENTS
     AllTargetsAsmParsers
     AllTargetsDescs
     AllTargetsInfos
-    MC
-    MCParser
-    Support
-    TargetParser
+    MCV1
+    MCParserV1
+    SupportV1
+    TargetParserV1
 )
 
 add_llvm_fuzzer(llvm-mc-assemble-fuzzer
