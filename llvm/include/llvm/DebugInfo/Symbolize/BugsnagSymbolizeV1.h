@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-typedef struct SymbolizeResult {
+typedef struct SymbolizeResultV1 {
   char* address;
   bool inlined;
   char* fileName;
@@ -16,15 +16,15 @@ typedef struct SymbolizeResult {
   int column;
   int startLine;
   bool badAddress;
-} SymbolizeResult;
+} SymbolizeResultV1;
 
-typedef struct SymbolizeResults {
+typedef struct SymbolizeResultsV1 {
   int resultCount;
-  SymbolizeResult* results;
-} SymbolizeResults;
+  SymbolizeResultV1* results;
+} SymbolizeResultsV1;
 
-SymbolizeResults BugsnagSymbolizeV1(const char* filePath, bool includeInline, char* addresses[], int addressCount);
-void DestroySymbolizeResultsV1(SymbolizeResults* symbolizeResults);
+SymbolizeResultsV1 BugsnagSymbolizeV1(const char* filePath, bool includeInline, char* addresses[], int addressCount);
+void DestroySymbolizeResultsV1(SymbolizeResultsV1* symbolizeResults);
 
 #ifdef __cplusplus
 }

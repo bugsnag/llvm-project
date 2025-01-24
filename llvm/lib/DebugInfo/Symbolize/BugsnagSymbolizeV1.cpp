@@ -1,4 +1,4 @@
-#include "llvm/DebugInfo/Symbolize/BugsnagSymbolize.h"
+#include "llvm/DebugInfo/Symbolize/BugsnagSymbolizeV1.h"
 #include "llvm/DebugInfo/Symbolize/Symbolize.h"
 #include "llvm/Object/ObjectFile.h"
 #include <cstdlib>
@@ -11,7 +11,7 @@ static void freeAndInvalidate(void** p) {
   *p = nullptr;
 }
 
-static void destroySymbolizeResult(SymbolizeResult* symbolizeResult) {
+static void destroySymbolizeResult(SymbolizeResultV1* symbolizeResult) {
   if (!symbolizeResult) {
     return;
   }
@@ -22,7 +22,7 @@ static void destroySymbolizeResult(SymbolizeResult* symbolizeResult) {
   freeAndInvalidate((void**)&symbolizeResult->symbolTableFunctionName);
 }
 
-static void destroySymbolizeResults(SymbolizeResults* symbolizeResults) {
+static void destroySymbolizeResults(SymbolizeResultsV1* symbolizeResults) {
   if (!symbolizeResults) {
     return;
   }
@@ -31,8 +31,8 @@ static void destroySymbolizeResults(SymbolizeResults* symbolizeResults) {
   }
 }
 
-SymbolizeResult getSymbolizeResult(const DILineInfo &info, std::string address, bool inlined, bool badAddress) {
-  SymbolizeResult result = {0};
+SymbolizeResultV1 getSymbolizeResult(const DILineInfo &info, std::string address, bool inlined, bool badAddress) {
+  SymbolizeResultV1 result = {0};
   result.inlined = inlined;
   result.badAddress = badAddress;
 
@@ -63,15 +63,15 @@ SymbolizeResult getSymbolizeResult(const DILineInfo &info, std::string address, 
   return result;
 }
 
-SymbolizeResults BugsnagSymbolizeV1(const char* filePath, bool includeInline, char* addresses[], int addressCount) {
+SymbolizeResultsV1 BugsnagSymbolizeV1(const char* filePath, bool includeInline, char* addresses[], int addressCount) {
   symbolize::LLVMSymbolizer::Options Opt;
   Opt.Demangle = false;
   symbolize::LLVMSymbolizer Symbolizer(Opt);
 
-  SymbolizeResults retVal = {0};
+  SymbolizeResultsV1 retVal = {0};
 
   std::string moduleName(filePath);
-  std::vector<SymbolizeResult> results;
+  std::vector<SymbolizeResultV1> results;
 
   for (int i = 0; i < addressCount; i++) {
     std::string hexAddress = addresses[i];
@@ -83,27 +83,27 @@ SymbolizeResults BugsnagSymbolizeV1(const char* filePath, bool includeInline, ch
       auto ResOrErr = Symbolizer.symbolizeInlinedCode(moduleName, moduleAddress);
       if (ResOrErr) {
         for (int j = 0; j < ResOrErr.get().getNumberOfFrames(); j++) {
-          SymbolizeResult result = getSymbolizeResult(ResOrErr.get().getFrame(j), hexAddress, (j == 0) ? false: true, *addressErr != 0);
+          SymbolizeResultV1 result = getSymbolizeResult(ResOrErr.get().getFrame(j), hexAddress, (j == 0) ? false: true, *addressErr != 0);
           results.push_back(result);
         }
       }
     } else {
       auto ResOrErr = Symbolizer.symbolizeCode(moduleName, moduleAddress);
       if (ResOrErr) {
-        SymbolizeResult result = getSymbolizeResult(ResOrErr.get(), hexAddress, false, *addressErr != 0);
+        SymbolizeResultV1 result = getSymbolizeResult(ResOrErr.get(), hexAddress, false, *addressErr != 0);
         results.push_back(result);
       }
     }
   }
 
   retVal.resultCount = results.size();
-  retVal.results = new SymbolizeResult[results.size()];
+  retVal.results = new SymbolizeResultV1[results.size()];
   std::copy(results.begin(), results.end(), retVal.results);
 
   return retVal;
 }
 
-void DestroySymbolizeResultsV1(SymbolizeResults* symbolizeResults) {
+void DestroySymbolizeResultsV1(SymbolizeResultsV1* symbolizeResults) {
   if (symbolizeResults) {
     destroySymbolizeResults(symbolizeResults);
   }

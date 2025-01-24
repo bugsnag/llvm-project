@@ -4,7 +4,7 @@ add_llvm_component_library(LLVMSymbolizeV1
   MarkupFilter.cpp
   SymbolizableObjectFile.cpp
   Symbolize.cpp
-  BugsnagSymbolize.cpp
+  BugsnagSymbolizeV1.cpp
 
   ADDITIONAL_HEADER_DIRS
   ${LLVM_MAIN_INCLUDE_DIR}/llvm/DebugInfo/Symbolize
