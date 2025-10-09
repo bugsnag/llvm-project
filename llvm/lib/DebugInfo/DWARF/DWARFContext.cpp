@@ -698,12 +698,24 @@ void DWARFContext::dump(
     getDebugNames().dump(OS);
 }
 
-StringRef DWARFContext::getCompilationDirectory() {
+StringRef DWARFContext::getCompilationDirectory(uint64_t Address) {
   DWARFCompileUnit * unitForOffset = getCompileUnitForOffset(0);
   if (unitForOffset == nullptr) {
     return StringRef("");
   }
-  return StringRef(unitForOffset->getCompilationDir());
+  
+  StringRef baseCompDir = StringRef(unitForOffset->getCompilationDir());
+  
+  // XCode26 dSYMs compiled with global first units, detected by "/" compilation directory
+  // then revert to CU relative file paths.
+  if (baseCompDir.equals(StringRef("/"))) {
+    DWARFCompileUnit *CU = getCompileUnitForDataAddress(Address);
+    if (!CU)
+      return StringRef("");
+    baseCompDir = StringRef(CU->getCompilationDir());
+  }
+
+  return baseCompDir;
 }
 
 DWARFTypeUnit *DWARFContext::getTypeUnitForHash(uint16_t Version, uint64_t Hash,
