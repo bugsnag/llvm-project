@@ -707,8 +707,8 @@ StringRef DWARFContext::getCompilationDirectory(uint64_t Address) {
   
   StringRef compDir = StringRef(unitForOffset->getCompilationDir());
   
-  // XCode26 dSYMs compiled with global first units, detected by "/" compilation directory of the first compile unit
-  // instead get the DW_AT_comp_dir from the compile unit of the provided address.
+  // dSYMs can be compiled with some global first CUs, detected by "/" compilation directory of the first compile unit
+  // instead of using '/' get the DW_AT_comp_dir from the compile unit of the provided address.
   if (compDir.equals(StringRef("/"))) {
     unitForOffset = getCompileUnitForDataAddress(Address);
     if (unitForOffset == nullptr) {
