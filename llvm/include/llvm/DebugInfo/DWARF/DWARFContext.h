@@ -473,7 +473,6 @@ private:
 
   void addLocalsForDie(DWARFCompileUnit *CU, DWARFDie Subprogram, DWARFDie Die,
                        std::vector<DILocal> &Result);
-                       
 };
 
 } // end namespace llvm
