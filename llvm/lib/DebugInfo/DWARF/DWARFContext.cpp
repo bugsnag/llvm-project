@@ -712,7 +712,6 @@ StringRef DWARFContext::getCompilationDirectory(uint64_t Address) {
   if (compDir.equals(StringRef("/"))) {
     return StringRef("");
   }
-  
   return compDir;
 }
 
