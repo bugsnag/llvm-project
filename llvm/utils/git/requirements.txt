@@ -5,7 +5,9 @@
 #    pip-compile --output-file=requirements.txt requirements.txt.in
 #
 certifi==2022.12.07
-    # via requests
+    # via
+    #   -r requirements.txt.in
+    #   requests
 cffi==1.15.1
     # via pynacl
 charset-normalizer==2.1.1
@@ -17,7 +19,9 @@ gitdb==4.0.9
 gitpython==3.1.30
     # via -r requirements.txt.in
 idna==3.7
-    # via requests
+    # via
+    #   -r requirements.txt.in
+    #   requests
 pycparser==2.21
     # via cffi
 pygithub==1.55
