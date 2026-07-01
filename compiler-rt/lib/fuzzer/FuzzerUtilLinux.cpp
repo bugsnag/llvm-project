@@ -117,8 +117,12 @@ int ExecuteCommand(const Command &Cmd) {
   if (FileActionsPtr)
     posix_spawn_file_actions_destroy(FileActionsPtr);
 
-  if (ErrorCode != 0)
-    return -1;
+  if (ErrorCode != 0) {
+    errno = ErrorCode;
+    if (ErrorCode == ENOMEM || ErrorCode == EAGAIN)
+      return -1;
+    return W_EXITCODE(127, 0);
+  }
 
   // Wait for child process to complete
   int ProcessStatus = 0;
