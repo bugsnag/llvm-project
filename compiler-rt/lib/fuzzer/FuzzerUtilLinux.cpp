@@ -32,7 +32,7 @@ int ExecuteCommand(const Command &Cmd) {
   // system() to prevent CWE-78 (OS Command Injection) and CWE-88 (Argument
   // Injection). Arguments are passed directly without shell interpretation.
   
-  auto Args = Cmd.getArguments();
+  const auto &Args = Cmd.getArguments();
   size_t Argc = Args.size();
   if (Argc == 0)
     return -1;
