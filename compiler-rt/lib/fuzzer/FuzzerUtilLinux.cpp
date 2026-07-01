@@ -47,8 +47,11 @@ int ExecuteCommand(const Command &Cmd) {
   sigemptyset(&DefaultSigSet);
   sigaddset(&DefaultSigSet, SIGINT);
   sigaddset(&DefaultSigSet, SIGQUIT);
-  posix_spawnattr_setsigdefault(&SpawnAttributes, &DefaultSigSet);
-  posix_spawnattr_setflags(&SpawnAttributes, POSIX_SPAWN_SETSIGDEF);
+  if (posix_spawnattr_setsigdefault(&SpawnAttributes, &DefaultSigSet) != 0 ||
+      posix_spawnattr_setflags(&SpawnAttributes, POSIX_SPAWN_SETSIGDEF) != 0) {
+    posix_spawnattr_destroy(&SpawnAttributes);
+    return -1;
+  }
 
   // Build argv array - arguments NOT passed through shell
   std::vector<const char *> Argv;
