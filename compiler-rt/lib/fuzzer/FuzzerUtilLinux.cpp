@@ -88,6 +88,21 @@ int ExecuteCommand(const Command &Cmd) {
     }
   }
 
+  if (!Cmd.hasOutputFile() && Cmd.isOutAndErrCombined()) {
+    if (posix_spawn_file_actions_init(&FileActions) != 0) {
+      posix_spawnattr_destroy(&SpawnAttributes);
+      return -1;
+    }
+    FileActionsPtr = &FileActions;
+
+    if (posix_spawn_file_actions_adddup2(&FileActions, STDOUT_FILENO,
+                                         STDERR_FILENO) != 0) {
+      posix_spawn_file_actions_destroy(&FileActions);
+      posix_spawnattr_destroy(&SpawnAttributes);
+      return -1;
+    }
+  }
+
   pid_t Pid;
   // posix_spawnp requires char *const[] but does not modify arguments.
   // const_cast is safe here per POSIX specification.
