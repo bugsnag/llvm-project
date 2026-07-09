@@ -216,7 +216,8 @@ class ReportFailureTest(unittest.TestCase):
                 for key in keys:
                     with open(key, 'r') as handle:
                         result[key] = handle.readlines()
-                    if re.match(r'^(.*/)+clang(.*)\.i$', key):
+                    basename = os.path.basename(key)
+                    if basename.startswith('clang') and basename.endswith('.i'):
                         pp_file = key
 
             # prepocessor file generated
