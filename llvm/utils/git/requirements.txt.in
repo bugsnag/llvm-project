@@ -4,6 +4,11 @@
 # pip-compile -o requirements.txt  requirements.txt.in
 
 PyGithub
-GitPython
-certifi==2023.7.22
-idna==3.7
+cffi>=2.1.0              # Required by PyNaCl 1.6.2 on Python 3.9+
+GitPython>=3.1.37        # CVE-2023-41040
+PyJWT>=2.13.0            # CVE-2026-48526, CVE-2026-48522
+PyNaCl>=1.6.2            # CVE-2025-69277
+requests>=2.33.0         # CVE-2026-25645, CVE-2024-47081, CVE-2024-35195, CVE-2023-32681
+urllib3>=2.6.3           # CVE-2025-66471, CVE-2025-66418, CVE-2026-21441
+certifi>=2023.7.22       # CVE-2023-37920, CVE-2022-23491
+idna>=3.7                # CVE-2024-3651
