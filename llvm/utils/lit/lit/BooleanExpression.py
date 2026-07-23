@@ -47,7 +47,7 @@ class BooleanExpression:
 
     # Tokenization pattern.
     Pattern = re.compile(
-        r"\A\s*([()]|&&|\|\||!|(?:[-+=._a-zA-Z0-9]|\{\{.+?\}\})+)\s*(.*)\Z"
+        r"\A\s*([()]|&&|\|\||!|(?:[-+=._a-zA-Z0-9]|\{\{(?:[^}]|\}(?!\}))+\}\})+)\s*(.*)\Z"
     )
 
     @staticmethod
@@ -102,7 +102,7 @@ class BooleanExpression:
 
     def parseMATCH(self):
         regex = ""
-        for part in filter(None, re.split(r"(\{\{.+?\}\})", self.token)):
+        for part in filter(None, re.split(r"(\{\{(?:[^}]|\}(?!\}))+\}\})", self.token)):
             if part.startswith("{{"):
                 assert part.endswith("}}")
                 regex += "(?:{})".format(part[2:-2])
