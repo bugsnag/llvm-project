@@ -164,8 +164,9 @@ class ServerHandler(http.server.BaseHTTPRequestHandler):
             filename = norm_path
             filepath = os.path.realpath(os.path.join(self.src_path, filename))
 
-            # Path traversal guard (CWE-22): ensure resolved path stays within src_path
             base_path = os.path.realpath(self.src_path)
+            # Path traversal guard (CWE-22): block if filepath is outside src_path.
+            # filepath == base_path handles edge case where filename is "." or ""
             if not filepath.startswith(base_path + os.sep) and filepath != base_path:
                 self.send_response(403)
                 self.end_headers()
