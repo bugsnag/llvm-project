@@ -35,7 +35,8 @@ def start_gdb_log(debugger, command, result, dict):
     else:
         args_len = len(args)
         if args_len == 0:
-            log_file = tempfile.mktemp()
+            fd, log_file = tempfile.mkstemp()
+            os.close(fd)
         elif len(args) == 1:
             log_file = args[0]
 

@@ -24,7 +24,7 @@ inc_dir = os.path.join(lldb_root, "include")
 
 src_map = {}
 
-include_regex = re.compile('#include \"((lldb|Plugins|clang)(.*/)+).*\"')
+include_regex = re.compile(r'#include "((lldb|Plugins|clang)(?:/[^"/]*)+)/[^"]*"')
 
 def is_sublist(small, big):
     it = iter(big)

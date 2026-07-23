@@ -162,7 +162,15 @@ class ServerHandler(http.server.BaseHTTPRequestHandler):
             self.wfile.write(response.encode("UTF-8", "replace"))
         elif self.symcov_data.has_file(norm_path):
             filename = norm_path
-            filepath = os.path.join(self.src_path, filename)
+            filepath = os.path.realpath(os.path.join(self.src_path, filename))
+
+            # Path traversal guard (CWE-22): ensure resolved path stays within src_path
+            base_path = os.path.realpath(self.src_path)
+            if not filepath.startswith(base_path + os.sep) and filepath != base_path:
+                self.send_response(403)
+                self.end_headers()
+                return
+            
             if not os.path.exists(filepath):
                 self.send_response(404)
                 self.end_headers()
