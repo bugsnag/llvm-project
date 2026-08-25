@@ -5,7 +5,7 @@
 
 PyGithub
 cffi>=2.1.0              # Required by PyNaCl 1.6.2 on Python 3.9+
-GitPython>=3.1.37        # CVE-2023-41040
+GitPython>=3.1.52        # CVE-2023-41040, GHSA-rwj8-pgh3-r573
 PyJWT>=2.13.0            # CVE-2026-48526, CVE-2026-48522
 PyNaCl>=1.6.2            # CVE-2025-69277
 requests>=2.33.0         # CVE-2026-25645, CVE-2024-47081, CVE-2024-35195, CVE-2023-32681
