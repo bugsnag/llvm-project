@@ -26,7 +26,7 @@ pycparser==2.21
     # via cffi
 pygithub==1.55
     # via -r requirements.txt.in
-pyjwt==2.14.0
+pyjwt==2.15.1
     # via pygithub
 pynacl==1.6.2
     # via pygithub
